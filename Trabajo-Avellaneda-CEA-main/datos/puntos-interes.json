@@ -1,0 +1,2062 @@
+[
+  {
+    "idPuntosInteres": 1,
+    "nombre": "club villa heredia",
+    "latitud": -34.686242965039966,
+    "longitud": -58.370878701128504,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 1,
+    "localidad": "Gerli"
+  },
+  {
+    "idPuntosInteres": 2,
+    "nombre": "club atletico estrella de echenagucia",
+    "latitud": -34.6799293855736,
+    "longitud": -58.368681309314915,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 1,
+    "localidad": "Gerli"
+  },
+  {
+    "idPuntosInteres": 3,
+    "nombre": "Club Social y Deportivo Villa Argentina",
+    "latitud": -34.69206974261001,
+    "longitud": -58.36518563821705,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 1,
+    "localidad": "Gerli"
+  },
+  {
+    "idPuntosInteres": 4,
+    "nombre": "Club Social Cultural Y Deportivo Villa Ideal - VIAVE",
+    "latitud": -34.69099061420447,
+    "longitud": -58.365348939644925,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 1,
+    "localidad": "Gerli"
+  },
+  {
+    "idPuntosInteres": 5,
+    "nombre": "Cementerio de trenes - Ex Ferrobaires y más",
+    "latitud": -34.6751159274498,
+    "longitud": -58.380027837991044,
+    "idCategorias": 5,
+    "categoria": "miscelanio",
+    "idLocalidades": 1,
+    "localidad": "Gerli"
+  },
+  {
+    "idPuntosInteres": 6,
+    "nombre": "Polideportivo DEHEZA",
+    "latitud": -34.7006902840878,
+    "longitud": -58.356487143612355,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 1,
+    "localidad": "Gerli"
+  },
+  {
+    "idPuntosInteres": 7,
+    "nombre": "Parroquia del Loreto",
+    "latitud": -34.68705387678361,
+    "longitud": -58.34000466429294,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 8,
+    "nombre": "UBA CBC - Sede Avellaneda",
+    "latitud": -34.6760997588783,
+    "longitud": -58.363950140282974,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 9,
+    "nombre": "Arsenal Fútbol Club",
+    "latitud": -34.6783905,
+    "longitud": -58.3406051,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 10,
+    "nombre": "Reserva Natural Avellaneda",
+    "latitud": -34.67037760216628,
+    "longitud": -58.339847967187076,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 11,
+    "nombre": "Reserva Ecológica La Saladita",
+    "latitud": -34.67129293780069,
+    "longitud": -58.34117224845769,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 12,
+    "nombre": "Parque La Saladita",
+    "latitud": -34.67596328053856,
+    "longitud": -58.34086095289482,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 13,
+    "nombre": "Estadio Julio Humberto Grondona",
+    "latitud": -34.67818162067832,
+    "longitud": -58.340530071787775,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 14,
+    "nombre": "Plaza Simón Bolívar",
+    "latitud": -34.68094236151698,
+    "longitud": -58.33991620932855,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 15,
+    "nombre": "Paseo Mujeres Argentinas",
+    "latitud": -34.67541917750911,
+    "longitud": -58.35534430440744,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 16,
+    "nombre": "Parque Avellaneda Shopping",
+    "latitud": -34.677249281471845,
+    "longitud": -58.33286536355777,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 17,
+    "nombre": "Alto Avellaneda Shopping",
+    "latitud": -34.675444356613994,
+    "longitud": -58.36716814673532,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 18,
+    "nombre": "Área X",
+    "latitud": -34.67062828539944,
+    "longitud": -58.36431376558822,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 19,
+    "nombre": "Hotel Avellaneda",
+    "latitud": -34.6660976716395,
+    "longitud": -58.3581434947869,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 20,
+    "nombre": "Restaurante Brig",
+    "latitud": -34.66659920856586,
+    "longitud": -58.35756628564596,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 21,
+    "nombre": "La parrilla del Nou Camp",
+    "latitud": -34.66786986610369,
+    "longitud": -58.355732540599554,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 22,
+    "nombre": "Plaza San Martin",
+    "latitud": -34.66581378163938,
+    "longitud": -58.349872268046234,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 23,
+    "nombre": "Plaza Mariano Moreno",
+    "latitud": -34.669164130868204,
+    "longitud": -58.34709754010472,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 24,
+    "nombre": "Hospital Presidente Peron",
+    "latitud": -34.68075711050791,
+    "longitud": -58.358023956479755,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 25,
+    "nombre": "\"Tita Mattiusi\" Predio Racing Club",
+    "latitud": -34.67996290008558,
+    "longitud": -58.3610726323709,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 26,
+    "nombre": "Cancha de Hockey Racing Club",
+    "latitud": -34.682438252306774,
+    "longitud": -58.362169897239426,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 27,
+    "nombre": "Rinvendell Speakeasy",
+    "latitud": -34.69108228734815,
+    "longitud": -58.34906721174115,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 28,
+    "nombre": "Complejo deportivo estacion 98",
+    "latitud": -34.688092227914744,
+    "longitud": -58.33853030834499,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 29,
+    "nombre": "Club amas",
+    "latitud": -34.679856713506645,
+    "longitud": -58.32977451257689,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 30,
+    "nombre": "Parrila el Tano",
+    "latitud": -34.67616812521156,
+    "longitud": -58.352246004407405,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 31,
+    "nombre": "La fabrica del futbol",
+    "latitud": -34.67575223704792,
+    "longitud": -58.32445202187977,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 32,
+    "nombre": "Museo Municipal Malvinas",
+    "latitud": -34.68006540778871,
+    "longitud": -58.344849145205195,
+    "idCategorias": 8,
+    "categoria": "Edificios Municipales",
+    "idLocalidades": 2,
+    "localidad": "Sarandí"
+  },
+  {
+    "idPuntosInteres": 33,
+    "nombre": "UNDAV - Sede 12 de Octubre",
+    "latitud": -34.660553649938585,
+    "longitud": -58.355265793020216,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 34,
+    "nombre": "Parque Juan Jose Castelli",
+    "latitud": -34.658744587023584,
+    "longitud": -58.3491430715821,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 35,
+    "nombre": "Polideportivo Irala y vertis",
+    "latitud": -34.657366168619774,
+    "longitud": -58.348820873967256,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 36,
+    "nombre": "Club Playon",
+    "latitud": -34.657117045182275,
+    "longitud": -58.34917720836559,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 37,
+    "nombre": "Plaza Nuñes",
+    "latitud": -34.66127812714319,
+    "longitud": -58.34539260651137,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 38,
+    "nombre": "Club Olimpia",
+    "latitud": -34.66191385182124,
+    "longitud": -58.344558314440505,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 39,
+    "nombre": "Delicias Rosi",
+    "latitud": -34.66626830938944,
+    "longitud": -58.34153562000232,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 40,
+    "nombre": "Muelle Dock Sud",
+    "latitud": -34.64175552695996,
+    "longitud": -58.34467122214646,
+    "idCategorias": 13,
+    "categoria": "Vía pública",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 41,
+    "nombre": "Reserva Ecológica \"La Saladita Norte\"",
+    "latitud": -34.66340503310419,
+    "longitud": -58.33993293956871,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 42,
+    "nombre": "Canchita del fondo",
+    "latitud": -34.66236082921829,
+    "longitud": -58.33051445254668,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 43,
+    "nombre": "Reserva Ecologica SARANDI",
+    "latitud": -34.66451156247319,
+    "longitud": -58.32190152000237,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 44,
+    "nombre": "Reserva Costera Municipal de Avellaneda",
+    "latitud": -34.66389385008301,
+    "longitud": -58.318500478899956,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 45,
+    "nombre": "Puerto Piojo",
+    "latitud": -34.636056206262104,
+    "longitud": -58.332144179530516,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 46,
+    "nombre": "Polideportivo Dock Sud",
+    "latitud": -34.65844692171719,
+    "longitud": -58.34307125306006,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 47,
+    "nombre": "Club Sportivo Dock Sud",
+    "latitud": -34.65759179553205,
+    "longitud": -58.34327587582127,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 48,
+    "nombre": "Estadio de Los Inmigrantes",
+    "latitud": -34.658077620254716,
+    "longitud": -58.34336744883886,
+    "idCategorias": 2,
+    "categoria": "Estadio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 49,
+    "nombre": "Escuela Secundaria N°22 Julieta Lantieri",
+    "latitud": -34.64962155565481,
+    "longitud": -58.34380475442099,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 50,
+    "nombre": "Club deportivo del Renunciamiento",
+    "latitud": -34.64431357433128,
+    "longitud": -58.34808658931317,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 51,
+    "nombre": "Capilla San Martin de Porres",
+    "latitud": -34.64324903255293,
+    "longitud": -58.346540666038855,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 52,
+    "nombre": "Plaza José Hernández",
+    "latitud": -34.6407460416907,
+    "longitud": -58.35512187057473,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 53,
+    "nombre": "Parroquia Nuestra Señora de Fátima",
+    "latitud": -34.64115835410696,
+    "longitud": -58.35399823956992,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 54,
+    "nombre": "Museo Comunitario Isla Maciel",
+    "latitud": -34.6433335527831,
+    "longitud": -58.35389254142385,
+    "idCategorias": 8,
+    "categoria": "Edificios Municipales",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 55,
+    "nombre": "Estadio Dr Osvaldo Baletto",
+    "latitud": -34.64355314035928,
+    "longitud": -58.352093839569804,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 56,
+    "nombre": "Escuela de circo Municipal Avellaneda",
+    "latitud": -34.645250455231,
+    "longitud": -58.35490956655198,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 57,
+    "nombre": "Plaza El Valor de la Palabra",
+    "latitud": -34.648440876420075,
+    "longitud": -58.35412377211376,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 58,
+    "nombre": "Polideportivo Municipal 9 de Julio",
+    "latitud": -34.649818949336336,
+    "longitud": -58.35667300094994,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 59,
+    "nombre": "Club 1° de Marzo",
+    "latitud": -34.65123168537625,
+    "longitud": -58.35883299167997,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 60,
+    "nombre": "Club Deportivo Levalle",
+    "latitud": -34.6530846316994,
+    "longitud": -58.35506723316006,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 61,
+    "nombre": "Polideportivo Nueva Esperanza",
+    "latitud": -34.65207117789862,
+    "longitud": -58.35480036233038,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 62,
+    "nombre": "Jesús Camino de Vida",
+    "latitud": -34.651813609006055,
+    "longitud": -58.3545366623,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 63,
+    "nombre": "Parrilla Palmeras",
+    "latitud": -34.64924942598282,
+    "longitud": -58.34270839116688,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 64,
+    "nombre": "Restaurante Puerto Sud",
+    "latitud": -34.651699811904265,
+    "longitud": -58.34114952051612,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 65,
+    "nombre": "BYR Hamburgueseria",
+    "latitud": -34.65391998750173,
+    "longitud": -58.34553906603829,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 66,
+    "nombre": "The Marine Bar",
+    "latitud": -34.65491748951952,
+    "longitud": -58.3399893972417,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 67,
+    "nombre": "La Fortaleza",
+    "latitud": -34.655287866455524,
+    "longitud": -58.34536587396742,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 68,
+    "nombre": "La Impronta de Cacho",
+    "latitud": -34.65443633951785,
+    "longitud": -58.34325497767539,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 69,
+    "nombre": "Pizzería Venecia",
+    "latitud": -34.65538601895915,
+    "longitud": -58.34306148004253,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 70,
+    "nombre": "Pronto Pizza",
+    "latitud": -34.65508701695221,
+    "longitud": -58.34675540702483,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 71,
+    "nombre": "De pata Madre",
+    "latitud": -34.65417343904211,
+    "longitud": -58.34983743720203,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 72,
+    "nombre": "Sociedad de Fomento Unión Familiar las Torres",
+    "latitud": -34.650491625155176,
+    "longitud": -58.34991598745885,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 73,
+    "nombre": "Polideportivo Municipal Nicolás Avellaneda",
+    "latitud": -34.648233132888784,
+    "longitud": -58.350162652547546,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 74,
+    "nombre": "Pizzería ¡Que Caliente!",
+    "latitud": -34.64513386476912,
+    "longitud": -58.34889776149947,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 75,
+    "nombre": "Plaza del Renunciamiento",
+    "latitud": -34.644689209294214,
+    "longitud": -58.34818690088352,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 76,
+    "nombre": "Logan Café",
+    "latitud": -34.642298051460706,
+    "longitud": -58.348374194875255,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 3,
+    "localidad": "Dock Sud"
+  },
+  {
+    "idPuntosInteres": 77,
+    "nombre": "Complejo Deportivo Catedral",
+    "latitud": -34.70047156697742,
+    "longitud": -58.32939093349139,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 78,
+    "nombre": "Polideportivo Municipal Wilde",
+    "latitud": -34.72005213547381,
+    "longitud": -58.33488543672438,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 79,
+    "nombre": "Parrilla El Tano",
+    "latitud": -34.69904221314723,
+    "longitud": -58.322505716519665,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 80,
+    "nombre": "Chalu",
+    "latitud": -34.70143242703052,
+    "longitud": -58.32303351629236,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 81,
+    "nombre": "Cappotte Ristorante",
+    "latitud": -34.695944941083106,
+    "longitud": -58.316784112584585,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 82,
+    "nombre": "Hospital Dr Eduardo Wilde",
+    "latitud": -34.69553235060852,
+    "longitud": -58.31642125522644,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 83,
+    "nombre": "Pizzería EDÉN",
+    "latitud": -34.69243596544543,
+    "longitud": -58.30453681258475,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 84,
+    "nombre": "Bike Park Wilde",
+    "latitud": -34.691816185693995,
+    "longitud": -58.30869276840338,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 85,
+    "nombre": "Las Torres Wilde",
+    "latitud": -34.69212685748224,
+    "longitud": -58.3004138488371,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 86,
+    "nombre": "La cascada Wilde",
+    "latitud": -34.69301590249868,
+    "longitud": -58.296807764695345,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 87,
+    "nombre": "Club Wilcoop",
+    "latitud": -34.69405293886541,
+    "longitud": -58.301612833491816,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 88,
+    "nombre": "Polideportivo Wilcoop",
+    "latitud": -34.69330307229608,
+    "longitud": -58.30072234034722,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 89,
+    "nombre": "Club El Trebol",
+    "latitud": -34.69640067347285,
+    "longitud": -58.301526400947466,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 90,
+    "nombre": "Parrilla Lo de Gustavo",
+    "latitud": -34.695217692218414,
+    "longitud": -58.30633520280151,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 91,
+    "nombre": "Colegio Modelo Pablo Picasso",
+    "latitud": -34.69823552294218,
+    "longitud": -58.30281353163755,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 92,
+    "nombre": "Parroquia Nuestra Señora del Carmen",
+    "latitud": -34.70248128739641,
+    "longitud": -58.310957231124426,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 93,
+    "nombre": "Pizza Hot Wilde",
+    "latitud": -34.70295736962653,
+    "longitud": -58.315660020000244,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 94,
+    "nombre": "Colegio modelo Sara Eccleston",
+    "latitud": -34.69959024272585,
+    "longitud": -58.31839381139744,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 95,
+    "nombre": "Parrilla el nieto de Chinaga",
+    "latitud": -34.70577713258712,
+    "longitud": -58.314220002800944,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 96,
+    "nombre": "Restaurante El descamisado",
+    "latitud": -34.70683067421206,
+    "longitud": -58.320553075818474,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 97,
+    "nombre": "Teatro Municipal Wilde",
+    "latitud": -34.70833905816889,
+    "longitud": -58.32366400094687,
+    "idCategorias": 13,
+    "categoria": "Vía pública",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 98,
+    "nombre": "Grisel Wilde",
+    "latitud": -34.711608959446856,
+    "longitud": -58.325591578185396,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 99,
+    "nombre": "Primaria N°69",
+    "latitud": -34.715069563504876,
+    "longitud": -58.320405112583565,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 100,
+    "nombre": "Plaza Gonnet",
+    "latitud": -34.71560500721404,
+    "longitud": -58.32730781629145,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 101,
+    "nombre": "Plaza federico chopin",
+    "latitud": -34.69401559340513,
+    "longitud": -58.3119296700471,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 102,
+    "nombre": "Ministerio nueva generación",
+    "latitud": -34.714730073628544,
+    "longitud": -58.343454628959286,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 103,
+    "nombre": "Club San Baltazar",
+    "latitud": -34.714317833470915,
+    "longitud": -58.34307271021676,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 104,
+    "nombre": "Plaza San Baltazar",
+    "latitud": -34.71433686013961,
+    "longitud": -58.34227414723647,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 105,
+    "nombre": "Club sol de Wilde",
+    "latitud": -34.71001467930317,
+    "longitud": -58.33768351443785,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 106,
+    "nombre": "Bodegón del sud",
+    "latitud": -34.70268052688134,
+    "longitud": -58.3224302837479,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 107,
+    "nombre": "Moreno consultorios medicos Wilde",
+    "latitud": -34.700374302110596,
+    "longitud": -58.31852697396489,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 108,
+    "nombre": "Plaza Leandro Denegri",
+    "latitud": -34.705691852364154,
+    "longitud": -58.32343205522595,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 109,
+    "nombre": "Plaza Papa Francisco",
+    "latitud": -34.70758671507392,
+    "longitud": -58.32509611629197,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 110,
+    "nombre": "Plaza Monseñor Maggi",
+    "latitud": -34.721404315870956,
+    "longitud": -58.33357361124223,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 111,
+    "nombre": "Merendero lo de niña",
+    "latitud": -34.72609496189841,
+    "longitud": -58.33302358300239,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 112,
+    "nombre": "Centro de educación física",
+    "latitud": -34.722693933222764,
+    "longitud": -58.330483781697886,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 113,
+    "nombre": "Murales de Messi",
+    "latitud": -34.719410104406975,
+    "longitud": -58.325723134975966,
+    "idCategorias": 13,
+    "categoria": "Vía pública",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 114,
+    "nombre": "Club Villa Manuel",
+    "latitud": -34.71589799158469,
+    "longitud": -58.323754952450784,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 115,
+    "nombre": "Farmacia roseti",
+    "latitud": -34.71565255293205,
+    "longitud": -58.32234610379352,
+    "idCategorias": 2,
+    "categoria": "Estadio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 116,
+    "nombre": "E.E.S N°21",
+    "latitud": -34.71464659250015,
+    "longitud": -58.32118538074128,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 117,
+    "nombre": "Club barrio futuro juniors",
+    "latitud": -34.712859340555525,
+    "longitud": -58.32100033796467,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 118,
+    "nombre": "Jiro sushi Wilde",
+    "latitud": -34.70630805780088,
+    "longitud": -58.31424627558217,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 119,
+    "nombre": "El nieto de chinaga",
+    "latitud": -34.70572421237474,
+    "longitud": -58.31408052792922,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 4,
+    "localidad": "Wilde"
+  },
+  {
+    "idPuntosInteres": 120,
+    "nombre": "Universidad Tecnológica Nacional (UTN) - Facultad Regional Avellaneda",
+    "latitud": -34.6917,
+    "longitud": -58.3,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 121,
+    "nombre": "Polideportivo José María Gatica",
+    "latitud": -34.6917,
+    "longitud": -58.3,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 122,
+    "nombre": "Parque Dominico (Parque de los Derechos del Trabajador)",
+    "latitud": -34.6917,
+    "longitud": -58.3,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 123,
+    "nombre": "Polideportivo Municipal Diego Armando Maradona",
+    "latitud": -34.70575511267612,
+    "longitud": -58.3550020557735,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 124,
+    "nombre": "Club 6 de enero",
+    "latitud": -34.70806603106472,
+    "longitud": -58.353583587431736,
+    "idCategorias": 2,
+    "categoria": "Estadio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 125,
+    "nombre": "Centro Cultural Y Comunitario Abuela Elvira",
+    "latitud": -34.70533187349271,
+    "longitud": -58.3489785718681,
+    "idCategorias": 5,
+    "categoria": "miscelanio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 126,
+    "nombre": "Club Carabelas",
+    "latitud": -34.707255401083565,
+    "longitud": -58.347668520692,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 127,
+    "nombre": "Club Gabino Alegre",
+    "latitud": -34.70545869090912,
+    "longitud": -58.34458004056206,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 128,
+    "nombre": "Parroquia María Madre de la Iglesia y San Cayetano",
+    "latitud": -34.70568009978207,
+    "longitud": -58.34659253344217,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 129,
+    "nombre": "Club Pichocho",
+    "latitud": -34.70270142533375,
+    "longitud": -58.34412015811361,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 130,
+    "nombre": "Cementerio Municipal de Avellaneda",
+    "latitud": -34.700167681180915,
+    "longitud": -58.34694708329233,
+    "idCategorias": 5,
+    "categoria": "miscelanio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 131,
+    "nombre": "Villa Ite",
+    "latitud": -34.70292477885744,
+    "longitud": -58.338567894142344,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 132,
+    "nombre": "Maxiconsumo S.A",
+    "latitud": -34.70356182929559,
+    "longitud": -58.34079881347496,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 133,
+    "nombre": "Parque Sindicato Munic. Avellaneda \"MONTE INGLÉS",
+    "latitud": -34.70424492700963,
+    "longitud": -58.33759401977481,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 134,
+    "nombre": "Escuela de Educación Secundaria Técnica (EEST) Nº2 \"General Enrique Mosconi\"",
+    "latitud": -34.70458327096791,
+    "longitud": -58.34442938010854,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 135,
+    "nombre": "Escuela De Educación Primaria Nº58 \"Martín José De La Serna\"",
+    "latitud": -34.7026052315951,
+    "longitud": -58.34472173156933,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 136,
+    "nombre": "Escuela Especial Nº507",
+    "latitud": -34.703506536132295,
+    "longitud": -58.345361748868406,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 137,
+    "nombre": "ETG Polideportivo UTN Avellaneda",
+    "latitud": -34.693456967898655,
+    "longitud": -58.325189738803104,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 138,
+    "nombre": "Parque Los Derechos del Trabajador (Parque Dominico)",
+    "latitud": -34.693487387665286,
+    "longitud": -58.32953134181913,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 139,
+    "nombre": "Hipólito Club - Darwin 150 (Parque Dominico)",
+    "latitud": -34.6916187452019,
+    "longitud": -58.330200329572854,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 140,
+    "nombre": "Barras De Calistenia (Parque Dominico)",
+    "latitud": -34.692023684208344,
+    "longitud": -58.32905118258801,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 141,
+    "nombre": "Musculación Polideportivo Gatica (Parque Dominico)",
+    "latitud": -34.69224864947204,
+    "longitud": -58.32569494377708,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 142,
+    "nombre": "Escuela Municipal De Atletismo (Parque Dominico)",
+    "latitud": -34.69112381703909,
+    "longitud": -58.32642456090989,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 143,
+    "nombre": "Parque Dominico",
+    "latitud": -34.69273257799709,
+    "longitud": -58.32952467477588,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 144,
+    "nombre": "UTN FRA - Ingeniería Tecnológica",
+    "latitud": -34.6941690365622,
+    "longitud": -58.32636797025447,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 145,
+    "nombre": "Cooperativa UST",
+    "latitud": -34.67035777122174,
+    "longitud": -58.30776645722083,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 146,
+    "nombre": "Muelles de pescadores de villa dominico",
+    "latitud": -34.668932325756074,
+    "longitud": -58.301925842638184,
+    "idCategorias": 5,
+    "categoria": "miscelanio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 147,
+    "nombre": "Ceamse - Complejo Ambiental Villa Domínico",
+    "latitud": -34.685792515960294,
+    "longitud": -58.316796698798626,
+    "idCategorias": 5,
+    "categoria": "miscelanio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 148,
+    "nombre": "Delicias bernal",
+    "latitud": -34.69246653045898,
+    "longitud": -58.333092893384524,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 149,
+    "nombre": "U.G Sokol",
+    "latitud": -34.69036856180992,
+    "longitud": -58.32248892911905,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 150,
+    "nombre": "Restaurante LIO SAN",
+    "latitud": -34.6827246462678,
+    "longitud": -58.32267390390455,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 151,
+    "nombre": "Parque del Río",
+    "latitud": -34.66746197020102,
+    "longitud": -58.30080072190052,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 5,
+    "localidad": "Villa Dominico"
+  },
+  {
+    "idPuntosInteres": 152,
+    "nombre": "Bersagliere Ristorante",
+    "latitud": -34.6807764772265,
+    "longitud": -58.385080665542816,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 153,
+    "nombre": "Instituto Superior de Formación Docente №1 de Avellaneda “Abuelas de Plaza de Mayo”",
+    "latitud": -34.67435833224515,
+    "longitud": -58.382919434333836,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 154,
+    "nombre": "Club amado nervo",
+    "latitud": -34.672355199195565,
+    "longitud": -58.37957464818723,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 155,
+    "nombre": "Costa marfil",
+    "latitud": -34.67242857114485,
+    "longitud": -58.3813974844406,
+    "idCategorias": 13,
+    "categoria": "Vía pública",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 156,
+    "nombre": "Arroyo nantes",
+    "latitud": -34.67095948827246,
+    "longitud": -58.37838550984398,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 157,
+    "nombre": "El viejo cañon",
+    "latitud": -34.668708927909954,
+    "longitud": -58.37994375538437,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 158,
+    "nombre": "Restaurante club progresista",
+    "latitud": -34.66720536963044,
+    "longitud": -58.381657096652724,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 159,
+    "nombre": "Centro medico nogoya",
+    "latitud": -34.665270453656795,
+    "longitud": -58.377112309263296,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 160,
+    "nombre": "Plaza Aníbal villaflor",
+    "latitud": -34.66030714440538,
+    "longitud": -58.380903431376616,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 161,
+    "nombre": "Departamento judicial de avellaneda",
+    "latitud": -34.658139072338585,
+    "longitud": -58.378477658030036,
+    "idCategorias": 5,
+    "categoria": "miscelanio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 162,
+    "nombre": "Reserva Garcia y Pelegrini",
+    "latitud": -34.658869822744514,
+    "longitud": -58.38559714613591,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 163,
+    "nombre": "Club de Regatas de Avellaneda",
+    "latitud": -34.659797523003014,
+    "longitud": -58.381670017758864,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 164,
+    "nombre": "Club Pienovi",
+    "latitud": -34.661569213163645,
+    "longitud": -58.385996865467604,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 165,
+    "nombre": "Puente Victorino de la Plaza",
+    "latitud": -34.6606568966492,
+    "longitud": -58.388670017721886,
+    "idCategorias": 13,
+    "categoria": "Vía pública",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 166,
+    "nombre": "Parque lineal Victorino de la Plaza",
+    "latitud": -34.661457635443774,
+    "longitud": -58.38991482888459,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 167,
+    "nombre": "Santina Taproom",
+    "latitud": -34.66538245629322,
+    "longitud": -58.39274757224386,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 168,
+    "nombre": "Parque Camino de la rivera",
+    "latitud": -34.66257340609534,
+    "longitud": -58.39704855452445,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 169,
+    "nombre": "Paseo del ferrocarril",
+    "latitud": -34.662304309843,
+    "longitud": -58.39817367235194,
+    "idCategorias": 13,
+    "categoria": "Vía pública",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 170,
+    "nombre": "Parque Arenales",
+    "latitud": -34.66144450864333,
+    "longitud": -58.39949029959688,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 171,
+    "nombre": "UNDAV Sede Piñeyro",
+    "latitud": -34.6683621478732,
+    "longitud": -58.39839892934433,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 172,
+    "nombre": "Polideportivo José Mármol",
+    "latitud": -34.67488574144653,
+    "longitud": -58.39433586401674,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 173,
+    "nombre": "Plaza José Mármol",
+    "latitud": -34.67558803757962,
+    "longitud": -58.39351705778612,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 174,
+    "nombre": "Parroquia cristo rey",
+    "latitud": -34.668493404849606,
+    "longitud": -58.396419998697404,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 175,
+    "nombre": "Gerenciadora Mayday Sa",
+    "latitud": -34.67150637445722,
+    "longitud": -58.39423539702791,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 176,
+    "nombre": "Parroquia Madre de la Misericordia",
+    "latitud": -34.67688107311609,
+    "longitud": -58.394084696493756,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 177,
+    "nombre": "Escuela Madre de la Misericordia",
+    "latitud": -34.677352013940755,
+    "longitud": -58.393863669042545,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 178,
+    "nombre": "Panadería la rosa",
+    "latitud": -34.68189604229194,
+    "longitud": -58.38871975756901,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 179,
+    "nombre": "Parrilla del Rey",
+    "latitud": -34.68369293014286,
+    "longitud": -58.38643915616831,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 180,
+    "nombre": "Centro cardiológico avellaneda",
+    "latitud": -34.67833932859744,
+    "longitud": -58.385539976313154,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 181,
+    "nombre": "Iglesia cristiana evangelica",
+    "latitud": -34.67827736357578,
+    "longitud": -58.3865145064365,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 182,
+    "nombre": "Consultorio de especialidades medicinales Dr Victor D Fissor",
+    "latitud": -34.67707902712794,
+    "longitud": -58.389369429148665,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 183,
+    "nombre": "Orientación juvenil",
+    "latitud": -34.67657645251253,
+    "longitud": -58.386342898577745,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 184,
+    "nombre": "Plaza Marcelino Ugarte",
+    "latitud": -34.66788186019949,
+    "longitud": -58.38330207614212,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 185,
+    "nombre": "Vías del Sur",
+    "latitud": -34.66729502751054,
+    "longitud": -58.39440394635038,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 186,
+    "nombre": "Estadio Saturnino Moure",
+    "latitud": -34.65936388404479,
+    "longitud": -58.39787842866487,
+    "idCategorias": 11,
+    "categoria": "Fabricas",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 187,
+    "nombre": "Club S y D Rioja de avellaneda",
+    "latitud": -34.67438423448789,
+    "longitud": -58.3901435225342,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 188,
+    "nombre": "La chimenea club de padel",
+    "latitud": -34.6727519995226,
+    "longitud": -58.390661524882155,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 189,
+    "nombre": "Las picadas del tano",
+    "latitud": -34.67077508541088,
+    "longitud": -58.38868845980603,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 190,
+    "nombre": "Avellaneda Padel club",
+    "latitud": -34.66839602450889,
+    "longitud": -58.38847893074781,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 191,
+    "nombre": "Clahe eventos Piñeyro",
+    "latitud": -34.672353106922984,
+    "longitud": -58.38829846232927,
+    "idCategorias": 10,
+    "categoria": "Estadios y Clubes Deportivos",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 192,
+    "nombre": "Iglesia Cristiana Marathana Argentina",
+    "latitud": -34.67070386824839,
+    "longitud": -58.38197003056126,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 193,
+    "nombre": "Don Zenón",
+    "latitud": -34.664426077277945,
+    "longitud": -58.379292157502846,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 194,
+    "nombre": "Parroquia Nuestra señora del rosario",
+    "latitud": -34.665489873987084,
+    "longitud": -58.3829788293188,
+    "idCategorias": 4,
+    "categoria": "Iglesia",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 195,
+    "nombre": "Plaza Carlos Dopazo",
+    "latitud": -34.66590760408473,
+    "longitud": -58.396396060028444,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 6,
+    "localidad": "Piñeyro"
+  },
+  {
+    "idPuntosInteres": 196,
+    "nombre": "1870 Cervecería",
+    "latitud": -34.664223471855564,
+    "longitud": -58.36881062902271,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 197,
+    "nombre": "Pertutti",
+    "latitud": -34.66269411906573,
+    "longitud": -58.36442323868654,
+    "idCategorias": 6,
+    "categoria": "Servicio",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 198,
+    "nombre": "Teatro Municipal Roma",
+    "latitud": -34.66203356961762,
+    "longitud": -58.36320938228014,
+    "idCategorias": 8,
+    "categoria": "Edificios Municipales",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 199,
+    "nombre": "Teatro Colonial",
+    "latitud": -34.65818387956394,
+    "longitud": -58.37143617770249,
+    "idCategorias": 8,
+    "categoria": "Edificios Municipales",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 200,
+    "nombre": "Racing Club",
+    "latitud": -34.667455649917656,
+    "longitud": -58.36860252208537,
+    "idCategorias": 2,
+    "categoria": "Estadio",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 201,
+    "nombre": "Estadio Libertadores de América - Ricardo Enrique Bochini",
+    "latitud": -34.67019273208453,
+    "longitud": -58.37101843691053,
+    "idCategorias": 2,
+    "categoria": "Estadio",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 202,
+    "nombre": "Universidad Siglo 21 CAU Avellaneda",
+    "latitud": -34.66290839983694,
+    "longitud": -58.366878379301426,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 203,
+    "nombre": "Universidad Nacional de Avellaneda (UNDAV)",
+    "latitud": -34.66294689470404,
+    "longitud": -58.37226055624054,
+    "idCategorias": 1,
+    "categoria": "Educacion",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 204,
+    "nombre": "Complejo Deportivo Avellaneda - CAI",
+    "latitud": -34.67107039128375,
+    "longitud": -58.37392155915629,
+    "idCategorias": 3,
+    "categoria": "Polideportivo",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 205,
+    "nombre": "Hospital Interzonal General de Agudos Dr. Pedro Fiorito",
+    "latitud": -34.66634385995632,
+    "longitud": -58.36539069923014,
+    "idCategorias": 12,
+    "categoria": "Hospitales y Clinicas",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  },
+  {
+    "idPuntosInteres": 206,
+    "nombre": "Plaza Alsina",
+    "latitud": -34.66273164067431,
+    "longitud": -58.36520349815883,
+    "idCategorias": 9,
+    "categoria": "Espacios Verdes",
+    "idLocalidades": 7,
+    "localidad": "Avellaneda Centro"
+  }
+]
