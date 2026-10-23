@@ -1,0 +1,115 @@
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background-color: transparent;
+}
+.tabs button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fffff5;
+  color: #fffff5;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 4px 8px;
+  cursor: pointer;
+  outline: none;
+  transition: opacity 0.2 ease, border-color 0.2 ease;
+}
+.tabs button:hover{
+  opacity: 0.8;
+}
+
+.tabs button.active{
+  border-bottom-color:#fffff5;
+  font-weight: bold;
+}
+
+.movie-grid {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+.globo {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  background-color: #fffff5;
+  color: #333;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  font-size: 13px;
+}
+
+.globo::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.movie-card.activo .globo {
+  display: block;
+}
+
+.movie-card {
+  width: 180px; /* <--- AGREGADO: Define el ancho fijo de cada tarjeta */
+  background-color: #fffff5;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Contenedor e imagen para los pósters */
+.poster-container {
+  width: 100%; /* <--- CORREGIDO: Ocupa todo el ancho de la tarjeta */
+  aspect-ratio: 2 / 3; /* Ocupa la proporción correcta automáticamente sin poner height */
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.poster-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-info {
+  padding: 12px;
+}
+
+.card-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.badge {
+  color: #4da6ff;
+}

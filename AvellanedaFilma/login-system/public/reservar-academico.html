@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar Académico · Estudiantes de Cine · CEA</title>
+  <meta name="description" content="Permiso de filmación con exención arancelaria para estudiantes de cine y universidades en Avellaneda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow+Condensed:wght@600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge" style="background: var(--lime); color: var(--ink);">02 &middot; Académico</span>
+      <span>Fomento a Estudiantes de Cine &middot; Exención Arancelaria</span>
+    </div>
+    <div class="user-bar-right" id="user-bar-right">
+      <a href="/login">Iniciar Sesión</a>
+      <a href="/registro" style="font-weight: 700;">Registrarse</a>
+    </div>
+  </aside>
+
+  <header class="nav-cea" data-nav>
+    <a href="/" class="nav-cea-brand" aria-label="Avellaneda Filma Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Avellaneda Filma" class="nav-cea-logo-img" onerror="this.src='/imagenes/logofilmagrone.png'">
+      <span class="nav-cea-tagline">FOMENTO ESTUDIANTIL</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-cea-links">
+        <li><a href="/">Nosotros</a></li>
+        <li><a href="/locaciones">Locaciones</a></li>
+        <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+        <li><a href="/reserva" class="active">Reservas</a></li>
+        <li><a href="/como-reservar">Tutorial</a></li>
+      </ul>
+    </nav>
+    <a href="/reserva" class="btn btn-line btn-sm">&larr; Cambiar Perfil</a>
+  </header>
+
+  <main class="section-form-cea">
+    <div class="tarjeta-form-editorial">
+      
+      <div class="form-editorial-header">
+        <span class="label-eyebrow">Formulario Oficial 02</span>
+        <h2>Estudiante &middot; Académico</h2>
+        <p>Prácticas de rodaje, tesis y cortometrajes universitarios con exención arancelaria.</p>
+      </div>
+
+      <div class="alert-box" id="alert-box"></div>
+
+      <form id="form-reserva-perfil">
+        <input type="hidden" id="tipo-solicitante" value="Académico / Estudiante">
+        <input type="hidden" id="campo-zonas-geojson" name="zonas_geojson">
+
+        <div class="campo-cea">
+          <label for="campo-entidad">Universidad / Escuela de Cine</label>
+          <input type="text" id="campo-entidad" placeholder="Ej: UNDAV, ENERC, FUC, IDAC, UBA FADU" required>
+        </div>
+
+        <div class="campo-cea">
+          <label for="campo-nombre">Estudiante Responsable / Director/a</label>
+          <input type="text" id="campo-nombre" placeholder="Nombre y Apellido" required autocomplete="name">
+        </div>
+
+        <div class="campo-cea">
+          <label for="campo-email">Email Institucional o Personal</label>
+          <input type="email" id="campo-email" placeholder="estudiante@universidad.edu.ar" required autocomplete="email">
+        </div>
+
+        <div class="campo-cea">
+          <label for="campo-telefono">Teléfono / WhatsApp de Contacto</label>
+          <input type="tel" id="campo-telefono" placeholder="+54 9 11 ...">
+        </div>
+
+        <div class="campo-cea">
+          <label for="campo-locacion">Locación Solicitada</label>
+          <select id="campo-locacion" required>
+            <option value="">Seleccioná una locación o marcala en el mapa...</option>
+            <option value="Puente Transbordador Nicolás Avellaneda">Puente Transbordador Nicolás Avellaneda</option>
+            <option value="Estadio Presidente Perón (Racing Club)">Estadio Presidente Perón (Racing Club)</option>
+            <option value="Edificio Municipal de Avellaneda">Edificio Municipal de Avellaneda</option>
+            <option value="Predio La Saladita">Predio La Saladita</option>
+            <option value="Puente Gerli">Puente Gerli</option>
+            <option value="Estación Sarandí">Estación Sarandí</option>
+            <option value="Vía pública urbana / Calles de Avellaneda">Vía pública urbana / Calles de Avellaneda</option>
+          </select>
+        </div>
+
+        <!-- WIDGET MAPA INTERACTIVO DE AVELLANEDA -->
+        <div class="mapa-vincular-box">
+          <div class="mapa-vincular-header">
+            <div>
+              <strong style="color: var(--ink); font-family: var(--f-title); font-size: 1.15rem; text-transform: uppercase;">
+                🗺️ Mapa Oficial de Avellaneda &middot; Delimitar Zonas
+              </strong>
+              <p style="color: var(--muted); font-size: 13px; margin: 0;">
+                Elegí puntos de interés o dibujá zonas de corte, parking y filmación.
+              </p>
+            </div>
+            <button type="button" class="btn-toggle-mapa" id="btn-toggle-mapa">
+              Abrir Mapa ▾
+            </button>
+          </div>
+
+          <div class="mapa-resumen-tag" id="mapa-resumen-tag" style="display: none;">
+            <span id="mapa-resumen-texto">Ninguna zona marcada</span>
+            <button type="button" class="btn-limpiar-mapa" id="btn-limpiar-mapa">Borrar Zonas</button>
+          </div>
+
+          <div class="mapa-contenedor-wrapper" id="mapa-contenedor-wrapper" style="display: none;">
+            <div class="mapa-toolbar-dibujo">
+              <div class="selector-colores-zona">
+                <button type="button" class="btn-color-zona activo" data-color="amarillo">
+                  <span class="dot-color" style="background: #e2b630;"></span> Filmación
+                </button>
+                <button type="button" class="btn-color-zona" data-color="verde">
+                  <span class="dot-color" style="background: #368264;"></span> Corte Calle
+                </button>
+                <button type="button" class="btn-color-zona" data-color="azul">
+                  <span class="dot-color" style="background: #397fbd;"></span> Parking
+                </button>
+              </div>
+
+              <div class="acciones-mapa-btns">
+                <button type="button" class="btn-accion-mapa btn-dibujar" id="btn-dibujar-zona">✏️ Dibujar Zona</button>
+                <button type="button" class="btn-accion-mapa btn-borrar" id="btn-borrar-zona" title="Borrar zonas">&times;</button>
+                <button type="button" class="btn-accion-mapa btn-confirmar" id="btn-confirmar-zonas">Confirmar Zonas</button>
+              </div>
+            </div>
+
+            <div id="mapa-leaf" class="mapa-leaf-container"></div>
+            
+            <div style="background: var(--paper-2); padding: 8px 12px; font-size: 12.5px; color: var(--ink-2); display: flex; justify-content: space-between; border-top: 1px solid var(--line);">
+              <span id="estado-puntos-mapa">Cargando 206 puntos de interés...</span>
+              <span id="contador-zonas-texto" style="font-weight: 700;">0 zonas delimitadas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="campo-cea">
+          <label for="campo-fechas">Fecha y Horario Estimado del Rodaje</label>
+          <input type="text" id="campo-fechas" placeholder="Ej: Sábado 21 de Noviembre, de 09:00 a 18:00 hs">
+        </div>
+
+        <div class="campo-cea">
+          <label for="campo-detalles">Cátedra / Título del Proyecto Académico</label>
+          <textarea id="campo-detalles" rows="3" placeholder="Indicar materia, profesor/a a cargo y cantidad estimada de personas en el equipo de estudiantes."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-ink btn-lg" style="width: 100%; margin-top: 10px;">
+          Enviar Solicitud Académica &rarr;
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 24px; font-size: 14px; color: var(--muted);">
+        ¿Pertenecés a otra categoría? <a href="/reserva" class="link">Volver a perfiles</a> &middot; <a href="/como-reservar" class="link">Ver tutorial</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer-cea-v2" id="contacto">
+    <div class="wrap footer-cea-bottom" style="border-top: none; padding-top: 0;">
+      <span>&copy; 2026 CEA &middot; Municipalidad de Avellaneda</span>
+      <a href="#top">Subir &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+  <script src="/mapa-widget.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

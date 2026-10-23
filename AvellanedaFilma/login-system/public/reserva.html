@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permisos de Rodaje · Reservas · Avellaneda Filma · CEA</title>
+  <meta name="description" content="Solicitá tu permiso de filmación en Avellaneda según tu categoría: Empresa, Estudiante o Productora Independiente.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow+Condensed:wght@600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <!-- Capa analógica de grano cinematográfico -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Barra de Usuario Superior -->
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge">Ventanilla Única</span>
+      <span>Permisos de Rodaje y Locaciones &middot; Avellaneda Filma</span>
+    </div>
+    <div class="user-bar-right" id="user-bar-right">
+      <a href="/login">Iniciar Sesión</a>
+      <a href="/registro" style="font-weight: 700;">Registrarse</a>
+    </div>
+  </aside>
+
+  <!-- Navegación Sticky Editorial CEA -->
+  <header class="nav-cea" data-nav>
+    <a href="/" class="nav-cea-brand" aria-label="Avellaneda Filma Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Avellaneda Filma" class="nav-cea-logo-img" onerror="this.src='/imagenes/logofilmagrone.png'">
+      <span class="nav-cea-tagline">PERMISOS DE RODAJE</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-cea-links">
+        <li><a href="/">Nosotros</a></li>
+        <li><a href="/locaciones">Locaciones</a></li>
+        <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+        <li><a href="/reserva" class="active">Reservas</a></li>
+        <li><a href="/como-reservar">Tutorial</a></li>
+      </ul>
+    </nav>
+    <a href="/como-reservar" class="btn btn-line btn-sm">¿Cómo Funciona? &rarr;</a>
+  </header>
+
+  <main>
+    <section class="section-reserva-perfiles wrap">
+      
+      <div class="sec-header-row">
+        <div>
+          <p class="label-eyebrow">Programa Municipal de Filmaciones &middot; CEA</p>
+          <h1 class="section-head-title" style="margin-bottom: 0;">SELECCIONÁ TU CATEGORÍA DE RODAJE</h1>
+        </div>
+      </div>
+
+      <p style="font-size: 17px; color: var(--ink-2); max-width: 65ch; margin-bottom: 10px;">
+        Programa de la Municipalidad de Avellaneda para ordenar, proteger y facilitar los rodajes en el partido. Si vas a filmar en vía pública, parques, estadios o edificios municipales, completá el formulario correspondiente.
+      </p>
+
+      <!-- 3 TARJETAS NUMERADAS ESTILO CEA (01, 02, 03) -->
+      <div class="perfiles-editorial-grid">
+        
+        <!-- 01: Empresa -->
+        <a href="/reservar-empresa" class="tarjeta-perfil-cea">
+          <div class="num-tag">01</div>
+          <h3>Empresa</h3>
+          <div class="sub">Empresa Privada / Comercial</div>
+          <p>
+            Publicidad, comerciales de televisión, videoclips masivos y largometrajes comerciales. Coordinación de cortes de tránsito, aranceles y canon municipal.
+          </p>
+          <span class="cta-arrow">Completar formulario &rarr;</span>
+        </a>
+
+        <!-- 02: Estudiante -->
+        <a href="/reservar-academico" class="tarjeta-perfil-cea">
+          <div class="num-tag">02</div>
+          <h3>Estudiante</h3>
+          <div class="sub">Académico / Prácticas de Cine</div>
+          <p>
+            Estudiantes de carreras audiovisuales y universidades públicas o privadas (UNDAV, ENERC, FUC, IDAC, UBA). Acceso con exención arancelaria.
+          </p>
+          <span class="cta-arrow">Completar formulario &rarr;</span>
+        </a>
+
+        <!-- 03: Productora -->
+        <a href="/reservar-productora" class="tarjeta-perfil-cea">
+          <div class="num-tag">03</div>
+          <h3>Productora</h3>
+          <div class="sub">Productora Independiente</div>
+          <p>
+            Cine de autor, documentales, producciones con fomento INCAA o FNA y colectivos independientes. Acompañamiento logístico territorial.
+          </p>
+          <span class="cta-arrow">Completar formulario &rarr;</span>
+        </a>
+
+      </div>
+
+      <div style="margin-top: 48px; padding: 24px; border: 1.5px solid var(--ink); border-radius: var(--r); background: var(--paper-2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h4 style="font-family: var(--f-title); font-weight: 800; font-size: 1.25rem; text-transform: uppercase;">
+            ¿Tenés dudas sobre los requisitos o el mapa de locaciones?
+          </h4>
+          <p style="font-size: 14.5px; color: var(--muted); margin: 0;">
+            Revisá el tutorial paso a paso con los 4 pasos obligatorios antes de enviar la solicitud.
+          </p>
+        </div>
+        <a href="/como-reservar" class="btn btn-ink btn-sm">Ver Tutorial de Reserva &rarr;</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER MONUMENTAL CEA -->
+  <footer class="footer-cea-v2" id="contacto">
+    <div class="wrap">
+      <div class="footer-cea-top">
+        <div class="footer-cea-brand-col">
+          <h4>Avellaneda Filma</h4>
+          <p>
+            Centro de Experimentación Audiovisual (CEA) &middot; Municipalidad de Avellaneda. Promoción, ordenamiento y fomento de rodajes en todo el territorio del partido.
+          </p>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="/locaciones">Catálogo de Locaciones</a></li>
+            <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+            <li><a href="/reserva">Solicitar Permiso de Rodaje</a></li>
+            <li><a href="/como-reservar">Tutorial Paso a Paso</a></li>
+          </ul>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Contacto Oficial</h5>
+          <ul>
+            <li>Colón 1133 &middot; Avellaneda</li>
+            <li><a href="mailto:cineavellaneda.cea@gmail.com">cineavellaneda.cea@gmail.com</a></li>
+            <li><a href="https://mda.gob.ar" target="_blank" rel="noopener">mda.gob.ar &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-giant-watermark" aria-hidden="true">
+      PERMISOS &middot; CEA &middot; MDA
+    </div>
+
+    <div class="wrap footer-cea-bottom">
+      <span>&copy; 2026 CEA &middot; Municipalidad de Avellaneda. Todos los derechos reservados.</span>
+      <a href="#inicio">Volver arriba &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

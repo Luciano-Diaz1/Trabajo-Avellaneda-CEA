@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locaciones · Avellaneda Filma · CEA</title>
+  <meta name="description" content="Catálogo oficial de locaciones habilitadas para rodajes en el Municipio de Avellaneda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow+Condensed:wght@600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <!-- Capa analógica de grano cinematográfico -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Barra de Usuario Superior -->
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge">Catálogo Oficial</span>
+      <span>Patrimonio Arquitectónico, Estadios y Vía Pública de Avellaneda</span>
+    </div>
+    <div class="user-bar-right" id="user-bar-right">
+      <a href="/login">Iniciar Sesión</a>
+      <a href="/registro" style="font-weight: 700;">Registrarse</a>
+    </div>
+  </aside>
+
+  <!-- Navegación Sticky Editorial CEA -->
+  <header class="nav-cea" data-nav>
+    <a href="/" class="nav-cea-brand" aria-label="Avellaneda Filma Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Avellaneda Filma" class="nav-cea-logo-img" onerror="this.src='/imagenes/logofilmagrone.png'">
+      <span class="nav-cea-tagline">LOCACIONES</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-cea-links">
+        <li><a href="/">Nosotros</a></li>
+        <li><a href="/locaciones" class="active">Locaciones</a></li>
+        <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+        <li><a href="/reserva">Reservas</a></li>
+        <li><a href="/como-reservar">Tutorial</a></li>
+      </ul>
+    </nav>
+    <a href="/reserva" class="btn btn-ink btn-sm">Solicitar Permiso &rarr;</a>
+  </header>
+
+  <main>
+    <section class="section-locaciones wrap">
+      
+      <div class="sec-header-row">
+        <div>
+          <p class="label-eyebrow">Espacios Habilitados &middot; Municipio de Avellaneda</p>
+          <h1 class="section-head-title" style="margin-bottom: 0;">ZONAS DESTACABLES DEL MUNICIPIO</h1>
+        </div>
+        <a href="/reserva" class="btn btn-line btn-sm">Ver Mapa y Delimitar &rarr;</a>
+      </div>
+
+      <!-- 3 TARJETAS DESTACADAS (MUNICIPAL, ESTADIO, ESCUELAS) -->
+      <div class="destacadas-3-cols">
+        
+        <!-- 01: Municipal -->
+        <article class="card-locacion-cea">
+          <div class="card-locacion-frame">
+            <span class="card-locacion-num">01</span>
+            <img src="/imagenes/imagen4.png" alt="Edificio Municipal de Avellaneda" onerror="this.src='/imagenes/acru.jpg'">
+          </div>
+          <div class="card-locacion-info">
+            <div>
+              <h2 class="card-locacion-title">Municipal</h2>
+              <p class="card-locacion-desc">
+                Sede de gobierno comunal y palacio histórico. Fachadas monumentales de estilo neoclásico y áreas públicas aptas para escenas cívicas y formales.
+              </p>
+            </div>
+            <a href="/locacion-info?id=municipal" class="btn btn-ink btn-sm">Ver Ficha &amp; Reservar &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 02: Estadio -->
+        <article class="card-locacion-cea">
+          <div class="card-locacion-frame">
+            <span class="card-locacion-num">02</span>
+            <img src="/img/canchaavellaneda.jpe" alt="Estadio Presidente Perón - Racing Club" onerror="this.src='/imagenes/imagen1.JPG'">
+          </div>
+          <div class="card-locacion-info">
+            <div>
+              <h2 class="card-locacion-title">Estadio</h2>
+              <p class="card-locacion-desc">
+                Estadio Presidente Perón (Cilindro de Avellaneda). Estadio icónico con capacidad masiva, tribunas circulares, campo de juego y playones exteriores.
+              </p>
+            </div>
+            <a href="/locacion-info?id=estadio" class="btn btn-ink btn-sm">Ver Ficha &amp; Reservar &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 03: Escuelas -->
+        <article class="card-locacion-cea">
+          <div class="card-locacion-frame">
+            <span class="card-locacion-num">03</span>
+            <img src="/imagenes/acru.jpg" alt="Instituciones y Escuelas de Avellaneda" onerror="this.src='/imagenes/imagen2.JPG'">
+          </div>
+          <div class="card-locacion-info">
+            <div>
+              <h2 class="card-locacion-title">Escuelas</h2>
+              <p class="card-locacion-desc">
+                Colegios tradicionales, institutos técnicos y escuelas primarias con patios abiertos, arquitectura de mediados del siglo XX y aulas amplias.
+              </p>
+            </div>
+            <a href="/locacion-info?id=escuelas" class="btn btn-ink btn-sm">Ver Ficha &amp; Reservar &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- SEGUNDO BLOQUE: CATÁLOGO PATRIMONIAL Y PUENTES -->
+      <div style="margin-top: clamp(48px, 6vw, 84px);">
+        <div class="sec-header-row">
+          <div>
+            <p class="label-eyebrow">Patrimonio Fabril &middot; Ribera &middot; Vías</p>
+            <h2 class="section-head-title" style="margin-bottom: 0;">PUENTES Y ENTORNO INDUSTRIAL</h2>
+          </div>
+        </div>
+
+        <div class="destacadas-3-cols" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+          
+          <article class="card-locacion-cea">
+            <div class="card-locacion-frame">
+              <span class="card-locacion-num">04</span>
+              <img src="/img/transbordador.jpe" alt="Puente Transbordador">
+            </div>
+            <div class="card-locacion-info">
+              <div>
+                <h3 class="card-locacion-title">Puente Transbordador</h3>
+                <p class="card-locacion-desc">Monumento nacional sobre el Riachuelo. Estructura de hierro forjado de 1914 con barquilla colgante móvil.</p>
+              </div>
+              <a href="/locacion-info?id=transbordador" class="btn btn-ink btn-sm">Ver Ficha &amp; Reservar &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card-locacion-cea">
+            <div class="card-locacion-frame">
+              <span class="card-locacion-num">05</span>
+              <img src="/img/saladita.jpe" alt="Predio La Saladita">
+            </div>
+            <div class="card-locacion-info">
+              <div>
+                <h3 class="card-locacion-title">La Saladita</h3>
+                <p class="card-locacion-desc">Predio a cielo abierto con amplia superficie y perspectiva de conurbano activo, apto para producciones de gran escala.</p>
+              </div>
+              <a href="/locacion-info?id=saladita" class="btn btn-ink btn-sm">Ver Ficha &amp; Reservar &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card-locacion-cea">
+            <div class="card-locacion-frame">
+              <span class="card-locacion-num">06</span>
+              <img src="/img/puentegerli.webp" alt="Puente Gerli">
+            </div>
+            <div class="card-locacion-info">
+              <div>
+                <h3 class="card-locacion-title">Puente Gerli</h3>
+                <p class="card-locacion-desc">Estructura vial elevada que cruza las vías del ferrocarril Roca con vistas abiertas y control de tránsito coordinado.</p>
+              </div>
+              <a href="/locacion-info?id=puentegerli" class="btn btn-ink btn-sm">Ver Ficha &amp; Reservar &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card-locacion-cea">
+            <div class="card-locacion-frame">
+              <span class="card-locacion-num">07</span>
+              <img src="/img/sarandiestacion.webp" alt="Estación Sarandí">
+            </div>
+            <div class="card-locacion-info">
+              <div>
+                <h3 class="card-locacion-title">Estación Sarandí</h3>
+                <p class="card-locacion-desc">Entorno ferroviario elevado del ramal La Plata/Bosques con andenes, cruces peatonales y estética de transporte suburbano.</p>
+              </div>
+              <a href="/locacion-info?id=sarandi" class="btn btn-ink btn-sm">Ver Ficha &amp; Reservar &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER MONUMENTAL CEA -->
+  <footer class="footer-cea-v2" id="contacto">
+    <div class="wrap">
+      <div class="footer-cea-top">
+        <div class="footer-cea-brand-col">
+          <h4>Avellaneda Filma</h4>
+          <p>
+            Centro de Experimentación Audiovisual (CEA) &middot; Municipalidad de Avellaneda. Promoción, ordenamiento y fomento de rodajes en todo el territorio del partido.
+          </p>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="/locaciones">Catálogo de Locaciones</a></li>
+            <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+            <li><a href="/reserva">Solicitar Permiso de Rodaje</a></li>
+            <li><a href="/como-reservar">Tutorial Paso a Paso</a></li>
+          </ul>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Contacto Oficial</h5>
+          <ul>
+            <li>Colón 1133 &middot; Avellaneda</li>
+            <li><a href="mailto:cineavellaneda.cea@gmail.com">cineavellaneda.cea@gmail.com</a></li>
+            <li><a href="https://mda.gob.ar" target="_blank" rel="noopener">mda.gob.ar &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-giant-watermark" aria-hidden="true">
+      LOCACIONES &middot; AVELLANEDA
+    </div>
+
+    <div class="wrap footer-cea-bottom">
+      <span>&copy; 2026 CEA &middot; Municipalidad de Avellaneda. Todos los derechos reservados.</span>
+      <a href="#inicio">Volver arriba &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

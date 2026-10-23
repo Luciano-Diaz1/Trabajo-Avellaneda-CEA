@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hecho en Avellaneda · Catálogo Audiovisual · CEA</title>
+  <meta name="description" content="Obras cinematográficas, series y producciones audiovisuales filmadas en el Municipio de Avellaneda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow+Condensed:wght@600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <!-- Capa analógica de grano cinematográfico -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Barra de Usuario Superior -->
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge">Archivo &amp; Exhibición</span>
+      <span>Obras Filmadas en Territorio de Avellaneda</span>
+    </div>
+    <div class="user-bar-right" id="user-bar-right">
+      <a href="/login">Iniciar Sesión</a>
+      <a href="/registro" style="font-weight: 700;">Registrarse</a>
+    </div>
+  </aside>
+
+  <!-- Navegación Sticky Editorial CEA -->
+  <header class="nav-cea" data-nav>
+    <a href="/" class="nav-cea-brand" aria-label="Avellaneda Filma Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Avellaneda Filma" class="nav-cea-logo-img" onerror="this.src='/imagenes/logofilmagrone.png'">
+      <span class="nav-cea-tagline">HECHO EN AVELLANEDA</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-cea-links">
+        <li><a href="/">Nosotros</a></li>
+        <li><a href="/locaciones">Locaciones</a></li>
+        <li><a href="/hecho-en-avellaneda" class="active">Hecho en Avellaneda</a></li>
+        <li><a href="/reserva">Reservas</a></li>
+        <li><a href="/como-reservar">Tutorial</a></li>
+      </ul>
+    </nav>
+    <a href="/reserva" class="btn btn-ink btn-sm">Solicitar Permiso &rarr;</a>
+  </header>
+
+  <main>
+    <section class="section-hecho-en-ave wrap">
+      
+      <div class="sec-header-row">
+        <div>
+          <p class="label-eyebrow">Catálogo Histórico &middot; Ficción &middot; Series &middot; Documentales</p>
+          <h1 class="section-head-title" style="margin-bottom: 0;">HECHO EN AVELLANEDA</h1>
+        </div>
+      </div>
+
+      <!-- Barra de Búsqueda y Filtros en Estilo Editorial -->
+      <div class="toolbar-hecho">
+        <div class="search-cea-pill">
+          <span class="icon">&#128269;</span>
+          <input type="text" id="buscar-pelicula" placeholder="Buscar por título, elenco, director o barrio..." autocomplete="off">
+        </div>
+
+        <div>
+          <select id="filtro-categoria" class="select-cea" aria-label="Filtrar por formato">
+            <option value="todas">Todos los formatos</option>
+            <option value="película">Largometrajes</option>
+            <option value="serie">Series de Televisión</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="catalog-result-count" id="catalog-result-count" aria-live="polite"></p>
+
+      <!-- Grilla interactiva de Películas -->
+      <div class="peliculas-grid" id="peliculas-grid">
+        <!-- Renderizado dinámico desde app.js -->
+      </div>
+
+      <!-- SECCIÓN PELI INFO EDITORIAL -->
+      <div class="peli-info-editorial-card" id="peli-info-section" hidden>
+        
+        <!-- Poster Frame -->
+        <div class="peli-info-poster-frame">
+          <img id="peli-info-poster-img" src="/imagenes/papelesenelviento.webp" alt="Poster de la Película">
+        </div>
+
+        <!-- Ficha Técnica y Sinopsis -->
+        <div>
+          <span class="label-eyebrow" style="margin-bottom: 8px;">Ficha Técnica de la Obra</span>
+          <h2 style="font-family: var(--f-display); font-weight: 900; font-size: 2.6rem; text-transform: uppercase; line-height: 1; color: var(--ink);" id="peli-info-titulo-display"></h2>
+
+          <div class="peli-info-metadata-grid">
+            <div class="peli-info-field">
+              <strong>Locaciones de Rodaje:</strong>
+              <span id="peli-info-grabado">Avellaneda Centro y Dock Sud</span>
+            </div>
+            <div class="peli-info-field">
+              <strong>Dirección:</strong>
+              <span id="peli-info-direccion">Nestor Mazzini</span>
+            </div>
+            <div class="peli-info-field">
+              <strong>Elenco Principal:</strong>
+              <span id="peli-info-elenco">Cesar Troncoso, Andrea Carballo, Matilde Creimer Chiabrando</span>
+            </div>
+            <div class="peli-info-field">
+              <strong>Disponibilidad:</strong>
+              <span id="peli-info-donde-ver">Cine.ar Play / Funciones especiales CEA</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line);">
+            <strong style="font-family: var(--f-title); font-size: 14px; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px;">
+              Síntesis Argumental:
+            </strong>
+            <p id="peli-info-sintesis" style="font-size: 15.5px; line-height: 1.6; color: var(--ink-2);">
+              Flor cree que está de vacaciones con su papá, pero en realidad, él la raptó, pues teme no poder verla más luego del conflicto judicial con su madre. Un viaje tenso filmado en las calles y rincones emblemáticos de Avellaneda.
+            </p>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <a href="/reserva" class="btn btn-ink btn-sm">Quiero filmar en esta locación &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER MONUMENTAL CEA -->
+  <footer class="footer-cea-v2" id="contacto">
+    <div class="wrap">
+      <div class="footer-cea-top">
+        <div class="footer-cea-brand-col">
+          <h4>Avellaneda Filma</h4>
+          <p>
+            Centro de Experimentación Audiovisual (CEA) &middot; Municipalidad de Avellaneda. Promoción, ordenamiento y fomento de rodajes en todo el territorio del partido.
+          </p>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="/locaciones">Catálogo de Locaciones</a></li>
+            <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+            <li><a href="/reserva">Solicitar Permiso de Rodaje</a></li>
+            <li><a href="/como-reservar">Tutorial Paso a Paso</a></li>
+          </ul>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Contacto Oficial</h5>
+          <ul>
+            <li>Colón 1133 &middot; Avellaneda</li>
+            <li><a href="mailto:cineavellaneda.cea@gmail.com">cineavellaneda.cea@gmail.com</a></li>
+            <li><a href="https://mda.gob.ar" target="_blank" rel="noopener">mda.gob.ar &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-giant-watermark" aria-hidden="true">
+      CINE &middot; ARCHIVO &middot; CEA
+    </div>
+
+    <div class="wrap footer-cea-bottom">
+      <span>&copy; 2026 CEA &middot; Municipalidad de Avellaneda. Todos los derechos reservados.</span>
+      <a href="#inicio">Volver arriba &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

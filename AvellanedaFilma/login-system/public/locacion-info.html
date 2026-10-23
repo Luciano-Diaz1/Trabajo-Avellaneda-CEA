@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locacion INFO - Avellaneda Filma</title>
+  <meta name="description" content="Información técnica, imágenes, coordenadas y solicitud de reserva para filmaciones en Avellaneda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <!-- Barra de Usuario Superior -->
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge">Ficha Técnica</span>
+      <span>Locación Audiovisual Oficial</span>
+    </div>
+    <div class="user-bar-right" id="user-bar-right">
+      <a href="/login">Iniciar Sesión</a>
+      <a href="/registro" style="color: var(--green-filma); font-weight: 600;">Registrarse</a>
+    </div>
+  </aside>
+
+  <!-- Header: Locacion INFO -->
+  <header class="header-bar">
+    <a href="/" class="logo-box" aria-label="Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Logo Filma" onerror="this.src='/imagenes/logofilmagrone.png'">
+    </a>
+    <h1 class="page-title">Ficha de Locación</h1>
+    <nav aria-label="Navegación">
+      <a href="/">Nosotros</a>
+      <a href="/locaciones" class="active">Locaciones</a>
+      <a href="/hecho-en-avellaneda">Hecho en Avellaneda</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-locacion-info">
+      <div class="locacion-info-inner">
+
+        <!-- Título de la Locación -->
+        <div style="text-align: center; margin-bottom: 28px;">
+          <h2 style="font-size: 2rem; color: #fff; font-weight: 800;" id="locacion-titulo">
+            Cargando locación...
+          </h2>
+          <span id="locacion-subtitulo" style="color: var(--green-filma); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;"></span>
+        </div>
+
+        <!-- Carrusel de 3 fotos con flechas según boceto -->
+        <div class="carousel-container">
+          <button type="button" class="carousel-btn" id="carousel-prev" aria-label="Foto anterior">&#10094;</button>
+          
+          <div class="carousel-slides-row">
+            <div class="carousel-slide-thumb active">
+              <img src="/img/transbordador.jpe" alt="" id="slide-img-1">
+            </div>
+            <div class="carousel-slide-thumb">
+              <img src="/imagenes/imagen1.JPG" alt="" id="slide-img-2">
+            </div>
+            <div class="carousel-slide-thumb">
+              <img src="/img/puentegerli.webp" alt="" id="slide-img-3">
+            </div>
+          </div>
+
+          <button type="button" class="carousel-btn" id="carousel-next" aria-label="Foto siguiente">&#10095;</button>
+        </div>
+
+        <!-- Descripción informativa -->
+        <div class="locacion-description">
+          <p id="locacion-descripcion"></p>
+          <p id="locacion-condiciones" style="margin-top: 10px; font-size: 0.95rem; color: #9ca3af;"></p>
+        </div>
+
+        <!-- Fila de Acción: Mapa a la izquierda + Botón destacado a la derecha -->
+        <div class="locacion-action-row">
+          
+          <!-- Mapa interactivo de ubicación -->
+          <div class="mapa-preview-box">
+            <iframe 
+              title="Mapa de Ubicación de la Locación"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-58.3650%2C-34.6450%2C-58.3450%2C-34.6300&amp;layer=mapnik&amp;marker=-34.6375%2C-58.3550"
+              id="locacion-mapa"
+              loading="lazy">
+            </iframe>
+            <div class="mapa-pin-overlay" title="Punto exacto del rodaje">&#128205;</div>
+          </div>
+
+          <!-- Botón RESERVAR destacado del boceto -->
+          <a href="/reserva" class="btn-reservar-destacado" id="locacion-reservar">
+            <span class="big-text">RESERVAR</span>
+            <span class="sub-text">Para reservar clickeá acá &rarr;</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Boceto Oficial -->
+  <footer class="footer-boceto" id="contacto">
+    <div class="footer-boceto-inner">
+      <a href="/" class="footer-brand">
+        <div class="footer-circle-a">a</div>
+        <span style="font-weight: 700; font-size: 1.1rem; letter-spacing: 1px;">FILMA</span>
+      </a>
+      <div class="footer-center">Contacto</div>
+      <div class="footer-links">
+        <a href="mailto:cineavellaneda.cea@gmail.com">cineavellaneda.cea@gmail.com</a>
+        <a href="/locaciones">Volver a Locaciones</a>
+        <a href="/reserva">Reservas</a>
+      </div>
+    </div>
+    <div class="footer-bottom-info">
+      &copy; 2026 Avellaneda Filma &middot; Centro de Experimentación Audiovisual (CEA) &middot; Municipalidad de Avellaneda
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+.cea-footer {
+    --f-black: #0E1010;
+    --f-off: #E8E4DC;
+    --f-gray: #777;
+    --f-dim: #2A2E2E;
+    --f-surface: #131616;
+    --f-border: rgba(232, 228, 220, 0.07);
+    --f-lime: #8ed926;
+    --f-green: #69B42E;
+    --f-orange: #E28F2A;
+    --f-cyan: #007AA9;
+    --f-purple: #946AAB;
+
+    background: var(--f-black);
+    color: var(--f-off);
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px solid var(--f-border);
+    scroll-behavior: smooth;
+  }
+
+  .cea-colorbar {
+    display: flex;
+    height: 4px;
+  }
+  .cea-colorbar span:nth-child(1) { background: var(--f-off); flex: 1; }
+
+  .cea-footer-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
+    gap: 56px;
+    padding: 72px 48px 48px;
+  }
+
+  .cea-footer-logo {
+    display: inline-flex;
+    align-items: center;
+    background: #141414;
+    color: var(--f-lime);
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    text-decoration: none;
+  }
+  .cea-footer-logo svg { display: block; width: 72px; height: 22px; fill: currentColor; }
+
+  .cea-footer-tag {
+    font-family: 'Syne Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--f-gray);
+    margin: 0 0 14px;
+  }
+  .cea-footer-desc {
+    color: var(--f-off);
+    margin: 0;
+    max-width: 320px;
+    font-size: 14px;
+  }
+
+  .cea-footer-title {
+    font-family: 'Syne Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--f-off);
+    margin: 0 0 20px;
+  }
+
+  .cea-footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+  }
+  .cea-footer-list a {
+    color: var(--f-gray);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .cea-footer-list a:hover,
+  .cea-footer-list a:focus-visible {
+    color: var(--f-lime);
+    outline: none;
+  }
+  .cea-footer-label {
+    display: block;
+    font-family: 'Syne Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--f-dim);
+    margin-bottom: 2px;
+  }
+
+  .cea-footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .cea-footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: var(--f-surface);
+    color: var(--f-off);
+    border: 1px solid var(--f-border);
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .cea-footer-social a:hover,
+  .cea-footer-social a:focus-visible {
+    background: var(--f-lime);
+    color: var(--f-black);
+    border-color: var(--f-lime);
+    outline: none;
+  }
+
+  .cea-footer-bottom {
+    border-top: 1px solid var(--f-border);
+    padding: 20px 48px;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--f-gray);
+  }
+  .cea-footer-bottom p { margin: 0; }
+  .cea-footer-bottom a {
+    color: var(--f-gray);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .cea-footer-bottom a:hover { color: var(--f-lime); }
+
+  @media (max-width: 1100px) {
+    .cea-footer-inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 56px 32px 40px;
+    }
+    .cea-footer-bottom { padding: 20px 32px; }
+  }
+
+  @media (max-width: 640px) {
+    .cea-footer-inner {
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding: 48px 20px 32px;
+    }
+    .cea-footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  }

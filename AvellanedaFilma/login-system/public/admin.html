@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administración - Avellaneda Filma</title>
+  <meta name="description" content="Panel de administración y visualización de solicitudes y registros de consultantes de Avellaneda Filma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Syne+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet para visualizar las zonas marcadas en el modal -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <!-- Barra de Administración Superior -->
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge" style="background: #ef4444; color: #fff;">Panel Administrador</span>
+      <span>Dirección de Gestión Audiovisual &middot; Municipalidad de Avellaneda</span>
+    </div>
+    <div class="user-bar-right" id="admin-user-bar">
+      <span>🛡️ <strong id="admin-nombre">Admin CEA</strong></span>
+      <a href="/" style="color: var(--green-filma); font-weight: 600;">Ver Portal Web</a>
+      <button type="button" class="btn-logout-small" id="btn-admin-logout">Cerrar Sesión</button>
+    </div>
+  </aside>
+
+  <!-- Header Panel -->
+  <header class="header-bar header-dark">
+    <a href="/" class="logo-box" aria-label="Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Logo Filma" onerror="this.src='/imagenes/logofilmagrone.png'">
+    </a>
+    <h1 class="page-title" style="font-size: 1.8rem;">REGISTROS DE CONSULTANTES</h1>
+    <nav aria-label="Navegación">
+      <a href="/">Nosotros</a>
+      <a href="/locaciones">Locaciones</a>
+      <a href="/reserva">Reservas</a>
+      <a href="/admin" class="active">Panel Admin</a>
+    </nav>
+  </header>
+
+  <main class="section-admin-dashboard">
+    <div class="admin-dashboard-inner">
+      
+      <!-- Mensaje si no está autenticado como administrador -->
+      <div id="admin-auth-warning" class="admin-auth-warning" role="alert" hidden>
+        <h3>Acceso restringido a administradores</h3>
+        <p>Para ver y gestionar las consultas, iniciá sesión con una cuenta que tenga permisos de administración. En una instalación nueva, configurá <code>ADMIN_PASSWORD</code> en el entorno del servidor antes de iniciarlo.</p>
+        <a href="/login" class="btn-form-submit" style="display: inline-block; width: auto; padding: 10px 24px; text-decoration: none;">
+          Iniciar Sesión como Administrador &rarr;
+        </a>
+      </div>
+
+      <!-- Métricas y Estadísticas de Consultas -->
+      <div class="admin-stats-grid" id="admin-stats-grid">
+        <div class="admin-stat-card destacado">
+          <span class="stat-label">Total Consultas</span>
+          <span class="stat-val" id="stat-total">0</span>
+        </div>
+        <div class="admin-stat-card">
+          <span class="stat-label">Empresas</span>
+          <span class="stat-val" id="stat-empresas" style="color: #60a5fa;">0</span>
+        </div>
+        <div class="admin-stat-card">
+          <span class="stat-label">Estudiantes</span>
+          <span class="stat-val" id="stat-estudiantes" style="color: #34d399;">0</span>
+        </div>
+        <div class="admin-stat-card">
+          <span class="stat-label">Productoras</span>
+          <span class="stat-val" id="stat-productoras" style="color: #fbbf24;">0</span>
+        </div>
+        <div class="admin-stat-card">
+          <span class="stat-label">Pendientes</span>
+          <span class="stat-val" id="stat-pendientes" style="color: #f87171;">0</span>
+        </div>
+      </div>
+
+      <!-- Contenedor Principal de la Tabla de Registros -->
+      <div class="admin-table-container">
+        
+        <div class="admin-table-header">
+          <div>
+            <h3 style="color: var(--ink); font-size: 1.15rem; margin: 0 0 4px;">Solicitudes y Registros Recibidos</h3>
+            <p style="color: var(--text-muted); font-size: 0.82rem; margin: 0;">Gestioná las consultas recibidas desde los formularios vinculados al mapa</p>
+          </div>
+
+          <div class="admin-table-tools">
+            <input type="text" id="filtro-buscar" placeholder="Buscar por nombre, entidad o locación..." aria-label="Buscar consultas">
+            
+            <select id="filtro-tipo" aria-label="Filtrar por perfil">
+              <option value="todos">Todos los Perfiles</option>
+              <option value="Empresa">Empresa Privada</option>
+              <option value="Académico">Estudiante / Académico</option>
+              <option value="Productora">Productora Independiente</option>
+            </select>
+
+            <button type="button" class="btn-admin-action" id="btn-exportar-csv">
+              📥 Exportar CSV
+            </button>
+            <button type="button" class="btn-admin-action" id="btn-recargar-consultas">
+              🔄 Actualizar
+            </button>
+          </div>
+        </div>
+
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Fecha</th>
+              <th>Perfil</th>
+              <th>Consultante / Entidad</th>
+              <th>Contacto</th>
+              <th>Locación Solicitada</th>
+              <th>Mapa / Zonas</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-consultas">
+            <tr>
+              <td colspan="9" style="text-align: center; padding: 30px; color: #9ca3af;">Cargando registros de consultantes...</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODAL DE DETALLE Y MAPA MARCADO -->
+  <div class="modal-admin-overlay" id="modal-detalle" role="dialog" aria-modal="true" aria-labelledby="modal-titulo-consultante">
+    <div class="modal-admin-box">
+      
+      <div class="modal-admin-header">
+        <div>
+          <span class="badge-tipo-solicitante" id="modal-badge-tipo">Empresa</span>
+          <h2 style="font-size: 1.4rem; color: #fff; margin: 6px 0 2px;" id="modal-titulo-consultante">Consulta #</h2>
+          <span style="font-size: 0.82rem; color: var(--text-muted);" id="modal-fecha">Fecha</span>
+        </div>
+        <button type="button" class="btn-logout-small" id="btn-cerrar-modal" style="font-size: 1.2rem; padding: 4px 10px;">&times;</button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: 0.88rem; background: #131722; padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+        <div>
+          <p style="margin-bottom: 6px;"><strong>Contacto:</strong> <span id="modal-nombre"></span></p>
+          <p style="margin-bottom: 6px;"><strong>Email:</strong> <span id="modal-email"></span></p>
+          <p style="margin-bottom: 6px;"><strong>Teléfono:</strong> <span id="modal-telefono"></span></p>
+        </div>
+        <div>
+          <p style="margin-bottom: 6px;"><strong>Entidad / Empresa:</strong> <span id="modal-entidad"></span></p>
+          <p style="margin-bottom: 6px;"><strong>Locación:</strong> <span id="modal-locacion" style="color: var(--green-filma);"></span></p>
+          <p style="margin-bottom: 6px;"><strong>Fechas:</strong> <span id="modal-fechas"></span></p>
+        </div>
+        <div style="grid-column: 1 / -1;">
+          <p style="margin-bottom: 0;"><strong>Detalles técnicos:</strong> <span id="modal-detalles"></span></p>
+        </div>
+      </div>
+
+      <!-- Mapa interactivo mostrando las zonas marcadas por el consultante -->
+      <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 8px;">🗺️ Zonas Delimitadas en el Mapa de Avellaneda</h4>
+      <div id="modal-mapa" class="modal-mapa-preview"></div>
+      <p id="modal-mapa-aviso" style="font-size: 0.8rem; color: var(--text-muted); margin-top: -8px; margin-bottom: 16px;">
+        Las zonas amarillas corresponden a rodaje, las verdes a corte de calle y las azules a parking.
+      </p>
+
+      <!-- Gestión de Estado de la Solicitud -->
+      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 16px; flex-wrap: wrap; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <label for="modal-select-estado" style="font-size: 0.85rem; color: #fff; font-weight: 600;">Modificar Estado:</label>
+          <select id="modal-select-estado" style="background: #11141c; border: 1px solid #374151; padding: 6px 12px; border-radius: 6px; color: #fff; font-size: 0.85rem;">
+            <option value="Pendiente">Pendiente</option>
+            <option value="En Revisión">En Revisión</option>
+            <option value="Aprobado">Aprobado</option>
+            <option value="Rechazado">Rechazado</option>
+          </select>
+          <button type="button" class="btn-admin-action" id="btn-guardar-estado">Guardar Estado</button>
+        </div>
+
+        <button type="button" class="btn-admin-action" style="background: #374151;" id="btn-modal-cerrar-bottom">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/app.js"></script>
+  <script>
+    let consultasData = [];
+    let modalMapInstance = null;
+    let modalLayerGroup = null;
+    let consultaSeleccionadaId = null;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      cargarConsultasAdmin();
+
+      document.getElementById('btn-recargar-consultas')?.addEventListener('click', cargarConsultasAdmin);
+      document.getElementById('filtro-buscar')?.addEventListener('input', filtrarConsultas);
+      document.getElementById('filtro-tipo')?.addEventListener('change', filtrarConsultas);
+      document.getElementById('btn-exportar-csv')?.addEventListener('click', exportarConsultasCSV);
+      document.getElementById('btn-admin-logout')?.addEventListener('click', async () => {
+        await fetch('/api/logout', { method: 'POST' });
+        window.location.href = '/login';
+      });
+
+      document.getElementById('btn-cerrar-modal')?.addEventListener('click', cerrarModal);
+      document.getElementById('btn-modal-cerrar-bottom')?.addEventListener('click', cerrarModal);
+      document.getElementById('btn-guardar-estado')?.addEventListener('click', guardarEstadoConsulta);
+      document.getElementById('modal-detalle')?.addEventListener('click', (event) => {
+        if (event.target.id === 'modal-detalle') cerrarModal();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') cerrarModal();
+      });
+    });
+
+    async function cargarConsultasAdmin() {
+      try {
+        const res = await fetch('/api/admin/consultas');
+        if (res.status === 403) {
+          document.getElementById('admin-auth-warning').hidden = false;
+          document.getElementById('tbody-consultas').innerHTML = `
+            <tr><td colspan="9" style="text-align: center; padding: 30px; color: #f87171;">Se requieren permisos de administrador para visualizar los registros.</td></tr>
+          `;
+          return;
+        }
+
+        const data = await res.json();
+        consultasData = data.consultas || [];
+
+        actualizarMetricas(consultasData);
+        renderTablaConsultas(consultasData);
+      } catch (err) {
+        console.error('Error al cargar consultas:', err);
+      }
+    }
+
+    function actualizarMetricas(lista) {
+      document.getElementById('stat-total').textContent = lista.length;
+      document.getElementById('stat-empresas').textContent = lista.filter(c => (c.tipo_solicitante || '').toLowerCase().includes('empresa')).length;
+      document.getElementById('stat-estudiantes').textContent = lista.filter(c => (c.tipo_solicitante || '').toLowerCase().includes('académico') || (c.tipo_solicitante || '').toLowerCase().includes('estudiante')).length;
+      document.getElementById('stat-productoras').textContent = lista.filter(c => (c.tipo_solicitante || '').toLowerCase().includes('productora')).length;
+      document.getElementById('stat-pendientes').textContent = lista.filter(c => (c.estado || '').toLowerCase() === 'pendiente').length;
+    }
+
+    function filtrarConsultas() {
+      const q = (document.getElementById('filtro-buscar')?.value || '').toLowerCase().trim();
+      const tipo = document.getElementById('filtro-tipo')?.value || 'todos';
+
+      const filtradas = consultasData.filter(c => {
+        const matchText = (c.nombre || '').toLowerCase().includes(q) ||
+                          (c.entidad || '').toLowerCase().includes(q) ||
+                          (c.locacion || '').toLowerCase().includes(q) ||
+                          (c.email || '').toLowerCase().includes(q);
+        const matchTipo = tipo === 'todos' || (c.tipo_solicitante || '').includes(tipo);
+        return matchText && matchTipo;
+      });
+
+      renderTablaConsultas(filtradas);
+    }
+
+    function renderTablaConsultas(lista) {
+      const tbody = document.getElementById('tbody-consultas');
+      if (!tbody) return;
+
+      if (lista.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="9" style="text-align: center; padding: 30px; color: #9ca3af;">No se encontraron registros de consultantes.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = lista.map(c => {
+        const fecha = c.fecha_creacion ? new Date(c.fecha_creacion).toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '-';
+        const estadoClass = (c.estado || 'pendiente').toLowerCase().replace(/\s+/g, '');
+        const tieneGeo = c.zonas_geojson && c.zonas_geojson.length > 10;
+
+        return `
+          <tr>
+            <td><strong>#${c.id}</strong></td>
+            <td><small style="color: #9ca3af;">${fecha}</small></td>
+            <td><span class="badge-tipo-solicitante">${escapeHtml(c.tipo_solicitante)}</span></td>
+            <td>
+              <strong>${escapeHtml(c.nombre)}</strong><br>
+              <small style="color: #9ca3af;">${escapeHtml(c.entidad || 'Sin entidad')}</small>
+            </td>
+            <td>
+              <small>${escapeHtml(c.email)}</small><br>
+              <small style="color: #9ca3af;">${escapeHtml(c.telefono || '-')}</small>
+            </td>
+            <td><strong>${escapeHtml(c.locacion)}</strong></td>
+            <td>
+              ${tieneGeo ? '<span style="color: var(--green-filma); font-weight: 600; font-size: 0.8rem;">🗺️ Zonas marcadas</span>' : '<span style="color: #6b7280; font-size: 0.8rem;">Sin mapa</span>'}
+            </td>
+            <td>
+              <span class="badge-estado ${estadoClass}">${escapeHtml(c.estado || 'Pendiente')}</span>
+            </td>
+            <td>
+              <button type="button" class="btn-admin-action" onclick="abrirModalDetalle(${c.id})">
+                Ver Detalle &rarr;
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    window.abrirModalDetalle = function(id) {
+      const c = consultasData.find(item => item.id === id);
+      if (!c) return;
+
+      consultaSeleccionadaId = id;
+      document.getElementById('modal-titulo-consultante').textContent = `Consulta #${c.id} - ${c.nombre}`;
+      document.getElementById('modal-badge-tipo').textContent = c.tipo_solicitante;
+      document.getElementById('modal-fecha').textContent = c.fecha_creacion || '';
+      document.getElementById('modal-nombre').textContent = c.nombre;
+      document.getElementById('modal-email').textContent = c.email;
+      document.getElementById('modal-telefono').textContent = c.telefono || 'No especificado';
+      document.getElementById('modal-entidad').textContent = c.entidad || 'No especificado';
+      document.getElementById('modal-locacion').textContent = c.locacion;
+      document.getElementById('modal-fechas').textContent = c.fechas || 'A coordinar';
+      document.getElementById('modal-detalles').textContent = c.detalles || 'Sin observaciones técnicas adicionales.';
+
+      const selEstado = document.getElementById('modal-select-estado');
+      if (selEstado) selEstado.value = c.estado || 'Pendiente';
+
+      const modal = document.getElementById('modal-detalle');
+      modal.classList.add('activo');
+      document.getElementById('btn-cerrar-modal')?.focus();
+
+      // Inicializar o actualizar mapa de previsualización
+      setTimeout(() => {
+        mostrarZonasEnModalMapa(c.zonas_geojson);
+      }, 150);
+    };
+
+    function mostrarZonasEnModalMapa(geojsonRaw) {
+      const container = document.getElementById('modal-mapa');
+      const aviso = document.getElementById('modal-mapa-aviso');
+
+      if (!modalMapInstance) {
+        modalMapInstance = L.map(container).setView([-34.66, -58.36], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19
+        }).addTo(modalMapInstance);
+        modalLayerGroup = L.featureGroup().addTo(modalMapInstance);
+      } else {
+        modalMapInstance.invalidateSize();
+        modalLayerGroup.clearLayers();
+      }
+
+      if (!geojsonRaw) {
+        aviso.textContent = 'El solicitante no delimitó zonas en el mapa.';
+        modalMapInstance.setView([-34.66, -58.36], 13);
+        return;
+      }
+
+      try {
+        const geojson = typeof geojsonRaw === 'string' ? JSON.parse(geojsonRaw) : geojsonRaw;
+        const layer = L.geoJSON(geojson, {
+          style: function(feature) {
+            const color = feature.properties?.color === 'verde' ? '#368264' : (feature.properties?.color === 'azul' ? '#397fbd' : '#e2b630');
+            return {
+              color: color,
+              fillColor: color,
+              fillOpacity: 0.5,
+              weight: 3
+            };
+          },
+          onEachFeature: function(feature, l) {
+            if (feature.properties?.tipo_zona) {
+              l.bindPopup(`<strong>${feature.properties.tipo_zona}</strong>`);
+            }
+          }
+        });
+
+        modalLayerGroup.addLayer(layer);
+        modalMapInstance.fitBounds(layer.getBounds(), { padding: [20, 20] });
+        aviso.textContent = `Zonas delimitadas por el solicitante mostradas en el mapa.`;
+      } catch (err) {
+        aviso.textContent = 'No se pudieron parsear las zonas del mapa.';
+      }
+    }
+
+    function cerrarModal() {
+      document.getElementById('modal-detalle')?.classList.remove('activo');
+      consultaSeleccionadaId = null;
+    }
+
+    async function guardarEstadoConsulta() {
+      if (!consultaSeleccionadaId) return;
+
+      const estado = document.getElementById('modal-select-estado').value;
+      try {
+        const res = await fetch(`/api/admin/consultas/${consultaSeleccionadaId}/estado`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ estado })
+        });
+        const data = await res.json();
+        if (data.success) {
+          alert(`Estado actualizado a: ${estado}`);
+          cerrarModal();
+          cargarConsultasAdmin();
+        } else {
+          alert('Error al actualizar estado.');
+        }
+      } catch (err) {
+        alert('Error de conexión.');
+      }
+    }
+
+    function exportarConsultasCSV() {
+      if (consultasData.length === 0) {
+        alert('No hay consultas para exportar.');
+        return;
+      }
+
+      const headers = ['ID', 'Fecha', 'Tipo Solicitante', 'Nombre', 'Email', 'Telefono', 'Entidad', 'Locacion', 'Fechas', 'Detalles', 'Estado'];
+      const rows = consultasData.map(c => [
+        c.id,
+        `"${c.fecha_creacion || ''}"`,
+        `"${c.tipo_solicitante || ''}"`,
+        `"${c.nombre || ''}"`,
+        `"${c.email || ''}"`,
+        `"${c.telefono || ''}"`,
+        `"${c.entidad || ''}"`,
+        `"${c.locacion || ''}"`,
+        `"${c.fechas || ''}"`,
+        `"${(c.detalles || '').replace(/"/g, '""')}"`,
+        `"${c.estado || 'Pendiente'}"`
+      ]);
+
+      const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement('a');
+      link.setAttribute('href', encodedUri);
+      link.setAttribute('download', `consultas_avellaneda_filma_${new Date().toISOString().slice(0, 10)}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+  </script>
+</body>
+</html>

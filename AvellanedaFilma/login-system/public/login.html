@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Avellaneda Filma</title>
+  <meta name="description" content="Iniciá sesión en el sistema de gestión y reservas de Avellaneda Filma.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <!-- Barra de Usuario Superior -->
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge">Autenticación</span>
+      <span>Sistema de Gestión de Usuarios y Reservas</span>
+    </div>
+    <div class="user-bar-right" id="user-bar-right">
+      <a href="/login" style="color: var(--green-filma); font-weight: 600;">Iniciar Sesión</a>
+      <a href="/registro">Registrarse</a>
+    </div>
+  </aside>
+
+  <!-- Header Boceto: INICIAR SESIÓN -->
+  <header class="header-bar">
+    <a href="/" class="logo-box" aria-label="Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Logo Filma" onerror="this.src='/imagenes/logofilmagrone.png'">
+    </a>
+    <h1 class="page-title">INICIAR SESIÓN</h1>
+    <nav aria-label="Navegación">
+      <a href="/">Nosotros</a>
+      <a href="/locaciones">Locaciones</a>
+      <a href="/hecho-en-avellaneda">Hecho en Avellaneda</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-form-centrado">
+      <!-- Tarjeta de Login fiel al Boceto -->
+      <div class="tarjeta-form-boceto">
+        
+        <div class="form-header-badge">
+          <div class="circle-badge">a</div>
+          <h2>BIENVENIDO/A</h2>
+          <p>Ingresá tus credenciales para acceder a tus reservas</p>
+        </div>
+
+        <div class="alert-box" id="alert-box"></div>
+
+        <form id="form-login">
+          <div class="campo-boceto">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" placeholder="tucorreo@ejemplo.com" required autocomplete="email">
+          </div>
+
+          <div class="campo-boceto">
+            <label for="login-password">Contraseña</label>
+            <input type="password" id="login-password" placeholder="Tu contraseña" required autocomplete="current-password">
+          </div>
+
+          <button type="submit" class="btn-form-submit" id="btn-login">Ingresar</button>
+        </form>
+
+        <div class="form-footer-links">
+          ¿No tenés cuenta aún? <a href="/registro">Registrate acá</a> &middot; <a href="/">Volver al inicio</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Boceto Oficial -->
+  <footer class="footer-boceto" id="contacto">
+    <div class="footer-boceto-inner">
+      <a href="/" class="footer-brand">
+        <div class="footer-circle-a">a</div>
+        <span style="font-weight: 700; font-size: 1.1rem; letter-spacing: 1px;">FILMA</span>
+      </a>
+      <div class="footer-center">Contacto</div>
+      <div class="footer-links">
+        <a href="mailto:cineavellaneda.cea@gmail.com">cineavellaneda.cea@gmail.com</a>
+        <a href="/reserva">Reservas</a>
+        <a href="/">Inicio</a>
+      </div>
+    </div>
+    <div class="footer-bottom-info">
+      &copy; 2026 Avellaneda Filma &middot; Centro de Experimentación Audiovisual (CEA) &middot; Municipalidad de Avellaneda
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

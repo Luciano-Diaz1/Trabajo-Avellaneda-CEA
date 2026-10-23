@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avellaneda - Ciudad Audiovisual</title>
+    <link rel="stylesheet" href="hechoenave.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+  <header id="hechoen">
+      
+
+        <!-- Slider -->
+
+        <div class="slider">
+
+            <!-- Controles del slider -->
+
+            <input type="radio" name="slider" id="slide1" checked>
+
+            <input type="radio" name="slider" id="slide2">
+
+            <input type="radio" name="slider" id="slide3">
+
+
+            <!-- Botón menú -->
+
+            <div class="menu-contenedor">
+
+                <input type="checkbox" id="abrir-menu">
+
+                <label for="abrir-menu" class="boton-menu">
+                    ☰
+                </label>
+
+
+                <!-- Menú desplegable -->
+
+                <nav class="menu">
+
+                    <a href="index.html">Inicio</a>
+
+                    <a href="hecho-en-avellaneda.html">Hecho En Avellaneda</a>
+
+                    <a href="locaciones.html">Locaciones</a>
+
+                    <a href="#contacto">Contacto</a>
+
+                </nav>
+                 
+                
+
+            </div>
+
+            
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <a href="index.html">
+                    <img src="imagenes/logofilmagrone.png" alt="Logo">
+                </a>
+
+                <h1>Hecho en Avellaneda</h1>
+
+            </div>
+
+
+            <!-- Imágenes -->
+
+            <div class="slides">
+
+
+                <!-- Imagen 1 -->
+
+                <div class="slide slide1">
+
+                    <img src="imagenes/elmar.jpg" alt="Imagen 1">
+
+                    <h2>El Marginal</h2>
+
+                </div>
+
+
+                <!-- Imagen 2 -->
+
+                <div class="slide slide2">
+
+                    <img src="imagenes/relatoss.jpg" alt="Imagen 2">
+
+                    <h2>Relatos Salvajes</h2>
+
+                </div>
+
+
+                <!-- Imagen 3 -->
+
+                <div class="slide slide3">
+
+                    <img src="imagenes/papelesenelvi.jpg" alt="Imagen 3">
+
+                    <h2>Papeles En El Viento</h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- Flechas -->
+
+            <div class="flechas">
+
+    <!-- Flechas para el SLIDE 1 -->
+    <label for="slide3" class="flecha izquierda flecha1">❮</label>
+    <label for="slide2" class="flecha derecha flecha1">❯</label> <!-- Corregido: antes decía slide1 -->
+
+    <!-- Flechas para el SLIDE 2 -->
+    <label for="slide1" class="flecha izquierda flecha2">❮</label>
+    <label for="slide3" class="flecha derecha flecha2">❯</label>
+
+    <!-- Flechas para el SLIDE 3 -->
+    <label for="slide2" class="flecha izquierda flecha3">❮</label>
+    <label for="slide1" class="flecha derecha flecha3">❯</label>
+
+            </div>
+
+        </div>
+
+    
+  </header>
+    
+
+<main>
+
+  //*MENU CATEGORIAS, AÑADIR PELIS, SERIES, VIDEOCLIPS*//
+
+  <nav class="tabs">
+    <button onclick="filtrarCategoria('todas')">Todas</button>
+    <button onclick="filtrarCategoria('película')">Películas</button>
+    <button onclick="filtrarCategoria('serie')">Series</button>
+    <button onclick="filtrarCategoria('videoclip')">Videoclips</button>
+  </nav>
+
+  <!-- Se agregó la clase movie-grid y se cambió la etiqueta interna a section -->
+  <section id="catalogo" class="movie-grid"></section>
+</main>  
+
+   <footer class="cea-footer" id="contacto">
+  <div class="cea-colorbar">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="cea-footer-inner">
+
+    <div class="cea-footer-col cea-footer-brand">
+      <a href="#hechoen" class="cea-footer-logo" aria-label="CEA">
+        <img src="imagenes/logofooter.png" alt="CEA Logo" class="cea-footer-logo-img">
+      </a>
+      <a href="#inicio" class="cea-footer-logo" aria-label="CEA">
+        <svg viewBox="0 0 72 22" aria-hidden="true">
+          <text x="0" y="18" font-family="Barlow Condensed, sans-serif" font-weight="900" font-size="22" letter-spacing="1">CEA</text>
+        </svg>
+      </a>
+      <p class="cea-footer-tag">
+        Centro de Experimentaci&oacute;n Audiovisual &middot; Municipalidad de Avellaneda
+      </p>
+      <p class="cea-footer-desc">
+        Cine, formaci&oacute;n y programaci&oacute;n cultural. Entrada libre y gratuita.
+      </p>
+    </div>
+
+    <div class="cea-footer-col">
+      <h4 class="cea-footer-title">Programaci&oacute;n</h4>
+      <ul class="cea-footer-list">
+        <li><a href="/#programacion">Cartelera semanal</a></li>
+        <li><a href="/#tickets">Reservar entrada</a></li>
+        <li><a href="/#visitas-inst">Visitas guiadas</a></li>
+        <li><a href="/#talleres">Talleres</a></li>
+      </ul>
+    </div>
+
+    <div class="cea-footer-col">
+      <h4 class="cea-footer-title">Institucional</h4>
+      <ul class="cea-footer-list">
+        <li><a href="/#espacios">Espacios</a></li>
+        <li><a href="/#archivo">Archivo</a></li>
+        <li><a href="https://www.mda.gob.ar" target="_blank" rel="noopener">Municipalidad de Avellaneda</a></li>
+        <li><a href="/prensa">Prensa</a></li>
+      </ul>
+    </div>
+
+    <div class="cea-footer-col">
+      <h4 class="cea-footer-title">Contacto</h4>
+      <ul class="cea-footer-list">
+        <li>
+          <span class="cea-footer-label">Direcci&oacute;n</span>
+          Col&oacute;n 1133 &middot; Avellaneda
+        </li>
+        <li>
+          <span class="cea-footer-label">Reservas</span>
+          <a href="mailto:entradasceamda@gmail.com">entradasceamda@gmail.com</a>
+        </li>
+        <li>
+          <span class="cea-footer-label">Consultas</span>
+          <a href="mailto:cineavellaneda.cea@gmail.com">cineavellaneda.cea@gmail.com</a>
+        </li>
+      </ul>
+
+      <div class="cea-footer-social" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/cea.avellaneda" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6z"/>
+          </svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cea-footer-bottom">
+    <p>&copy; <span id="cea-year"></span> CEA &middot; Municipalidad de Avellaneda. Todos los derechos reservados.</p>
+    <p><a href="/terminos">T&eacute;rminos</a> &middot; <a href="/privacidad">Privacidad</a></p>
+  </div>
+</footer>
+  
+  <!-- Vinculas tu archivo JS aquí -->
+  <script src="script.js"></script>
+
+</body>
+</html>

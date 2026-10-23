@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avellaneda Filma · CEA · Centro de Experimentación Audiovisual</title>
+  <meta name="description" content="Avellaneda Filma: gestión de permisos de rodaje, catálogo de locaciones y preservación audiovisual en el Municipio de Avellaneda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Barlow+Condensed:wght@600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+
+  <!-- Capa analógica de grano cinematográfico -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Leader: Cuenta regresiva de película (35mm) -->
+  <div class="leader" id="film-leader" aria-hidden="true">
+    <div class="leader-dial">
+      <span class="leader-sweep"></span>
+      <span class="leader-ring-outer"></span>
+      <span class="leader-ring-inner"></span>
+      <span class="leader-cross-h"></span>
+      <span class="leader-cross-v"></span>
+      <div class="leader-nums">
+        <span>3</span>
+        <span>2</span>
+        <span>1</span>
+      </div>
+    </div>
+    <p class="leader-sub">Avellaneda Filma &middot; CEA</p>
+  </div>
+
+  <!-- Barra de Usuario Superior -->
+  <aside class="user-bar" aria-label="Barra de usuario">
+    <div class="user-bar-left">
+      <span class="user-bar-badge">CEA Oficial</span>
+      <span>Centro de Experimentación Audiovisual &middot; Colón 1133, Avellaneda</span>
+    </div>
+    <div class="user-bar-right" id="user-bar-right">
+      <a href="/login">Iniciar Sesión</a>
+      <a href="/registro" style="font-weight: 700;">Registrarse</a>
+    </div>
+  </aside>
+
+  <!-- Navegación Sticky Editorial CEA -->
+  <header class="nav-cea" data-nav>
+    <a href="/" class="nav-cea-brand" aria-label="Avellaneda Filma Inicio">
+      <img src="/assets-root/FilmaLogo - Editado.png" alt="Avellaneda Filma" class="nav-cea-logo-img" onerror="this.src='/imagenes/logofilmagrone.png'">
+      <span class="nav-cea-tagline">FILMÁ SEGURO</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-cea-links">
+        <li><a href="/" class="active">Nosotros</a></li>
+        <li><a href="/locaciones">Locaciones</a></li>
+        <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+        <li><a href="/reserva">Reservas</a></li>
+        <li><a href="/como-reservar">Tutorial</a></li>
+      </ul>
+    </nav>
+    <a href="/reserva" class="btn btn-ink btn-sm">Solicitar Permiso &rarr;</a>
+  </header>
+
+  <main>
+    <!-- HERO EDITORIAL: "UN TERRITORIO PARA LA IMAGEN" -->
+    <section class="hero-editorial wrap" id="inicio">
+      <p class="label-eyebrow">Dirección de Gestión Audiovisual &middot; Municipalidad de Avellaneda</p>
+      
+      <h1 class="hero-main-title">
+        Un territorio<br>
+        para <mark class="hl-marker">la imagen</mark>
+      </h1>
+
+      <!-- Reproductor Cinemascope (Ratio 2.39:1) con el video institucional -->
+      <figure class="cinemascope-frame">
+        <video controls poster="/imagenes/imagenportadavideo.png" preload="metadata">
+          <source src="/imagenes/videofilma.mp4" type="video/mp4">
+          Tu navegador no soporta reproducción de video HTML5.
+        </video>
+      </figure>
+
+      <div class="hero-footer-grid">
+        <p class="hero-desc-lead">
+          Custodia, facilitación de rodajes y preservación de la memoria audiovisual bonaerense. Gestión integral de permisos de filmación en vía pública, fábricas y patrimonio histórico.
+        </p>
+        <div>
+          <a href="/reserva" class="btn btn-ink btn-lg">Solicitar Locación</a>
+        </div>
+        <div class="hero-address-block">
+          <strong>Colón 1133</strong>
+          Avellaneda &middot; Buenos Aires
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE CINTA CINEMATOGRÁFICA EN MOVIMIENTO -->
+    <div class="marquee-band" aria-label="Novedades y locaciones en vivo">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="mq-item"><span class="mq-title">Avellaneda Filma</span><span class="mq-date">Permisos de Rodaje</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+          <span class="mq-item"><span class="mq-title">Puente Transbordador</span><span class="mq-date">Locación Habilitada</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+          <span class="mq-item"><span class="mq-title">Cancha de Racing</span><span class="mq-date">Estadio Presidente Perón</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+          <span class="mq-item"><span class="mq-title">Fomento Estudiantil</span><span class="mq-date">Exención Arancelaria</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+        </div>
+        <!-- Duplicado para loop continuo -->
+        <div class="marquee-group">
+          <span class="mq-item"><span class="mq-title">Avellaneda Filma</span><span class="mq-date">Permisos de Rodaje</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+          <span class="mq-item"><span class="mq-title">Puente Transbordador</span><span class="mq-date">Locación Habilitada</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+          <span class="mq-item"><span class="mq-title">Cancha de Racing</span><span class="mq-date">Estadio Presidente Perón</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+          <span class="mq-item"><span class="mq-title">Fomento Estudiantil</span><span class="mq-date">Exención Arancelaria</span></span>
+          <svg class="mq-reel" viewBox="0 0 40 40"><path fill-rule="evenodd" d="M20 0a20 20 0 1 1 0 40a20 20 0 0 1 0-40Zm0 17a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-12a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 20a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-10-10a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm20 0a5 5 0 1 0 0 10a5 5 0 0 0 0-10Z"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCIÓN QUIENES SOMOS (EDITORIAL) -->
+    <section class="section-quienes-somos" id="nosotros">
+      <div class="wrap quienes-somos-grid">
+        
+        <article class="editorial-body">
+          <p class="label-eyebrow">Historia &middot; Producción &middot; Identidad</p>
+          <h2 class="section-head-title">Quienes Somos</h2>
+          <p>
+            Avellaneda posee una tradición audiovisual histórica vinculada a los orígenes del cine argentino. Desde las primeras producciones filmadas en la ciudad hasta las grandes películas nacionales realizadas en sus calles, fábricas, puentes y barrios, el territorio formó parte indisoluble de la construcción de la memoria colectiva del país.
+          </p>
+          <p>
+            La Municipalidad de Avellaneda acompaña activamente el desarrollo del sector cinematográfico, coordinando permisos viales, seguridad y facilitación logística en cada barrio, consolidando una política pública sostenida.
+          </p>
+          <p>
+            <strong>Porque una ciudad que produce y conserva sus imágenes también defiende su derecho a narrarse a sí misma.</strong>
+          </p>
+          <div style="margin-top: 32px;">
+            <a href="/locaciones" class="btn btn-line btn-lg">Explorar Locaciones &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Grilla de Fotos 2x2 enmarcada -->
+        <div class="editorial-photo-grid">
+          <div class="film-still-card">
+            <span class="film-still-badge">01 &middot; Calle</span>
+            <img src="/imagenes/imagen1.JPG" alt="Producción en calles de Avellaneda" onerror="this.src='/img/canchaavellaneda.jpe'">
+            <div class="film-still-caption">Exteriores Urbanos</div>
+          </div>
+          <div class="film-still-card">
+            <span class="film-still-badge">02 &middot; Industria</span>
+            <img src="/imagenes/imagen2.JPG" alt="Espacios industriales" onerror="this.src='/img/transbordador.jpe'">
+            <div class="film-still-caption">Patrimonio Fabril</div>
+          </div>
+          <div class="film-still-card">
+            <span class="film-still-badge">03 &middot; Palacio</span>
+            <img src="/imagenes/imagen4.png" alt="Edificio Municipal" onerror="this.src='/img/puentegerli.webp'">
+            <div class="film-still-caption">Arquitectura Cívica</div>
+          </div>
+          <div class="film-still-card">
+            <span class="film-still-badge">04 &middot; Ribera</span>
+            <img src="/imagenes/imagen3.JPG" alt="Ribera y puentes" onerror="this.src='/img/sarandiestacion.webp'">
+            <div class="film-still-caption">Puentes y Vías</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER MONUMENTAL (OFICIAL CEA / AVELLANEDA) -->
+  <footer class="footer-cea-v2" id="contacto">
+    <div class="wrap">
+      <div class="footer-cea-top">
+        <div class="footer-cea-brand-col">
+          <h4>Avellaneda Filma</h4>
+          <p>
+            Centro de Experimentación Audiovisual (CEA) &middot; Municipalidad de Avellaneda. Promoción, ordenamiento y fomento de rodajes en todo el territorio del partido.
+          </p>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="/locaciones">Catálogo de Locaciones</a></li>
+            <li><a href="/hecho-en-avellaneda">Hecho en Avellaneda</a></li>
+            <li><a href="/reserva">Solicitar Permiso de Rodaje</a></li>
+            <li><a href="/como-reservar">Tutorial Paso a Paso</a></li>
+          </ul>
+        </div>
+        <div class="footer-cea-links-col">
+          <h5>Contacto Oficial</h5>
+          <ul>
+            <li>Colón 1133 &middot; Avellaneda</li>
+            <li><a href="mailto:cineavellaneda.cea@gmail.com">cineavellaneda.cea@gmail.com</a></li>
+            <li><a href="https://mda.gob.ar" target="_blank" rel="noopener">mda.gob.ar &nearr;</a></li>
+            <li><a href="https://instagram.com/cea.avellaneda" target="_blank" rel="noopener">@cea.avellaneda &nearr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marca de agua monumental tipográfica -->
+    <div class="footer-giant-watermark" aria-hidden="true">
+      AVELLANEDA FILMA &middot; CEA
+    </div>
+
+    <div class="wrap footer-cea-bottom">
+      <span>&copy; 2026 CEA &middot; Municipalidad de Avellaneda. Todos los derechos reservados.</span>
+      <a href="#inicio">Volver arriba &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+  <script>
+    // Gestión del Leader Countdown (animación una sola vez por sesión)
+    document.addEventListener('DOMContentLoaded', () => {
+      const leader = document.getElementById('film-leader');
+      if (!leader) return;
+
+      if (sessionStorage.getItem('cea-leader-shown')) {
+        leader.classList.add('is-hidden');
+      } else {
+        sessionStorage.setItem('cea-leader-shown', 'true');
+        setTimeout(() => {
+          leader.classList.add('is-hidden');
+        }, 1600);
+      }
+    });
+  </script>
+</body>
+</html>

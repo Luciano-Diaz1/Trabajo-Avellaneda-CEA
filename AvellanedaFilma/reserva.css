@@ -1,0 +1,101 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #333;
+  color: #fffff5;
+  font-family: inter, sans-serif;
+
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #FEFBF2;
+  color: #333;
+}
+
+.logo {
+    position: relative;
+
+    z-index: 10;
+
+    display: flex;
+
+    flex-direction: row;
+
+}
+
+.logo img {
+    width: 100px;
+
+    height: auto;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.header nav a {
+  color: #333333;
+  text-decoration: solid;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+
+/* Contenedor de Tarjetas */
+.opciones-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  min-height: 70vh;
+  padding: 40px 20px;
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta-opcion {
+  background-color: #FEFBF2;
+  border: 6px solid #333;
+  border-radius: 28px;
+  width: 260px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjeta-opcion:hover {
+  transform: translateY(-8px);
+  background-color: #FEFBF2;
+}
+
+.icono-box img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+
+.tarjeta-opcion h2 {
+  font-size: 1.6rem;
+  margin: 10px 0 5px 0;
+}
+
+.tarjeta-opcion p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin: 0;
+}

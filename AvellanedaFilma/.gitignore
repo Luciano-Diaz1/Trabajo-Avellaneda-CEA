@@ -1,0 +1,6 @@
+**/node_modules/
+login-system/database/*.db
+.env
+.env.*
+!.env.example
+npm-debug.log*
